@@ -1,3 +1,3 @@
 module.exports = {
-    url: ('https://8dio.com'),
+    url: ('https://www.nationalmssociety.org'),
 }
