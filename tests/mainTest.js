@@ -18,6 +18,8 @@ module.exports = {
         pageObjects
             .moveToElement('@whatIsMS', 20, 20)
             .waitForElementVisible('@whatIsMSSubNav')
+            .api.pause(10000)
+            pageObjects
             .click('@whatIsMS')
             .waitForElementVisible('@popUpBox')
             .click('@popUpBoxClose')

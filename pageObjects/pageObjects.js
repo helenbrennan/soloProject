@@ -54,7 +54,7 @@ module.exports = {
             locateStrategy: 'xpath'
         },
         pageOne: {
-            selector: ('//*[@id="router-navigation"]/li[1]/div/div/div/a[1]'),
+            selector: ('#router-navigation > li:nth-child(2) > div > div > div > header > h3'),
             locateStrategy: 'xpath'
         },
         pageTwo: {
