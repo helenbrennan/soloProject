@@ -2,3 +2,6 @@
 selenium-server.log
 *.xml
 tests_output/CHROME_76.0.3809.132_Windows_NT_mainTest.xml
+PLAN-NationalMSSociety-Soloproject-300819-0212.pdf
+nightwatch.conf.js
+nightwatch.props.js
