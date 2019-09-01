@@ -38,7 +38,6 @@ module.exports = {
         .moveToElement('@symptomsDx', 20, 20)
         .waitForElementVisible('@symptomDXSubNav')
         .click('@symptomsDx')
-    }
+    },
 
 }    
-}
