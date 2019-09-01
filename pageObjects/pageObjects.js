@@ -59,7 +59,7 @@ module.exports = {
         },
         researchSubNav: ('#subNavResearch'),
         getInvolved: {
-            selector: ('//*[@id="Get-Involved-link]'),
+            selector: ('//*[@id="Get-Involved-link"]'),
             locateStrategy: 'xpath'
         },
         getInvolvedSubNav: ('#subNavGetInvolved'),
