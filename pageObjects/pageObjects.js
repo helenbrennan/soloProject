@@ -2,7 +2,17 @@ module.exports = {
     url: ('https://www.nationalmssociety.org'),
     elements: {
         signIn: {
-            selector: ('//*[@id="quick-links"]/div[1]/div/a'),
+            selector: ('//*[@id="quick-links"]/div[1]/div'),
+            locateStrategy: 'xpath'
+        },
+        username: {
+            selector: ("//input[@id='p_lt_zoneContent_pageplaceholder_p_lt_ctl02_SignInUsercontrol_userControlElem_txtUserName']"),
+            locateStrategy: 'xpath'
+        },
+        password: ('#p_lt_zoneContent_pageplaceholder_p_lt_ctl02_SignInUsercontrol_userControlElem_txtPassword'),
+        signInSubmit: ('#p_lt_zoneContent_pageplaceholder_p_lt_ctl02_SignInUsercontrol_userControlElem_btnLogin'),
+        navText: {
+            selector: ('//span[@class="masthead-nav-text"]'[2]),
             locateStrategy: 'xpath'
         },
         inYourArea: {
@@ -63,10 +73,7 @@ module.exports = {
             locateStrategy: 'xpath'
         },
         getInvolvedSubNav: ('#subNavGetInvolved'),
-        pageOne: {
-            selector: ('#router-navigation > li:nth-child(2) > div > div > div > header > h3'),
-            locateStrategy: 'xpath'
-        },
+        pageOne: ('#router-navigation > li:nth-child(1) > div > div > div > header > h3'),
         pageTwo: {
             selector: ('//*[@id="router-navigation"]/li[2]'),
             locateStrategy: 'xpath'
@@ -99,6 +106,7 @@ module.exports = {
             selector: ('//*[@id="router-navigation"]/li[9]'),
             locateStrategy: 'xpath'
         },
+        breadCrumbsCurrent: ('.CMSBreadCrumbsCurrentItem'),
         breadcrumbsBackOne: {
             selector: ('//*[@class="CMSBreadCrumbsLink"]'),
             locateStrategy: 'xpath'

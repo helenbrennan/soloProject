@@ -73,6 +73,7 @@ module.exports = {
         .moveToElement('@getInvolved', 20, 20)
         .waitForElementVisible('@getInvolvedSubNav')
         .click('@getInvolved')
-        .expect.element('@getInvolvedContent').text.to.contain('Get Involved').before(8000)
+        .expect.element('@breadCrumbsCurrent').text.to.contain('GET INVOLVED').before(8000)
     }
-}    
+    }
+
