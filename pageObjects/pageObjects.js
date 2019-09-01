@@ -38,22 +38,27 @@ module.exports = {
             selector: ('//*[@id="Treating-MS-link"]'),
             locateStrategy: 'xpath'
         },
+        treatingMSSubNav: ('#subNavTreatingMS'),
         resourceSupport: {
             selector: ('//*[@id="Resources-Support-link"]'),
             locateStrategy: 'xpath'
         },
+        resourceSubNav: ('#subNavResourcesSupport'),
         livingWell: {
             selector: ('//*[@id="Living-Well-With-MS-link"]'),
             locateStrategy: 'xpath'
         },
+        livingWellSubNav: ('#subNavLivingWellWithMS'),
         research: {
             selector: ('//*[@id="Research-link"]'),
             locateStrategy: 'xpath'
         },
+        researchSubNav: ('#subNavResearch'),
         getInvolved: {
             selector: ('//*[@id="Get-Involved-link]'),
             locateStrategy: 'xpath'
         },
+        getInvolvedSubNav: ('#subNavGetInvolved'),
         pageOne: {
             selector: ('#router-navigation > li:nth-child(2) > div > div > div > header > h3'),
             locateStrategy: 'xpath'
