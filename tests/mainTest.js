@@ -16,14 +16,12 @@ module.exports = {
     },
     'Q4H-101 Internal links - guest users - What is MS?': browser => {
         pageObjects
-            .moveToElement('@whatIsMS', 20, 20)
+            .moveToElement('@whatIsMS', 40, 40)
             .waitForElementVisible('@whatIsMSSubNav')
-            .api.pause(10000)
-            pageObjects
             .click('@whatIsMS')
             .waitForElementVisible('@popUpBox')
             .click('@popUpBoxClose')
-            .expect.element('@content').text.to.contain('What Is MS?').before(8000)
+            .expect.element('@content').text.to.contain('What Is MS?').before(10000)
         pageObjects
         // I don't know what this means
         // WebDriverWait wait1 = new WebDriverWait(driver, 10)
@@ -34,6 +32,13 @@ module.exports = {
         // .click('@pageOne')
         // .expect.element('@content').text.to.contain('Definition of MS').before(10000)
         // pageObjects
+    },
+    'Q4H-102 Internal links - guest users - Symptoms & Diagnosis': browser => {
+        pageObjects
+        .moveToElement('@symptomsDx', 20, 20)
+        .waitForElementVisible('@symptomDXSubNav')
+        .click('@symptomsDx')
+    }
 
 }    
 }

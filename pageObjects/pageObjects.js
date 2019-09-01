@@ -33,6 +33,7 @@ module.exports = {
             selector: ('//*[@id="Symptoms-Diagnosis-link"]'),
             locateStrategy: 'xpath'
         },
+        symptomDXSubNav: ('#subNavSymptomsDiagnosis'),
         treatingMS: {
             selector: ('//*[@id="Treating-MS-link"]'),
             locateStrategy: 'xpath'
