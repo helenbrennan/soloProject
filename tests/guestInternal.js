@@ -17,7 +17,7 @@ module.exports = {
     'Q4H-101 Internal links - guest users - What is MS?': browser => {
         pageObjects
             .moveToElement('@whatIsMS', 20, 20)
-            .waitForElementVisible('@whatIsMSSubNav')
+            .waitForElementPresent('@whatIsMSSubNav')
             .click('@whatIsMS')
             .waitForElementVisible('@popUpBox')
             .click('@popUpBoxClose')
