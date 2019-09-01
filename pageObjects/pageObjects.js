@@ -23,7 +23,7 @@ module.exports = {
             locateStrategy: 'xpath'
         },
         getInvolvedContent: {
-            selector: ('//div[@class="text"]')[1],
+            selector: ('//div[@class="text"]'[2]),
             locateStrategy: 'xpath'
         },
         popUpBox: ('.fancybox-outer'),
