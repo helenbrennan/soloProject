@@ -22,6 +22,10 @@ module.exports = {
             selector: ('//div[@class="content"]'),
             locateStrategy: 'xpath'
         },
+        getInvolvedContent: {
+            selector: ('//div[@class="text"]')[1],
+            locateStrategy: 'xpath'
+        },
         popUpBox: ('.fancybox-outer'),
         popUpBoxClose: ('.fancybox-item'),
         whatIsMS: {
