@@ -15,14 +15,15 @@ module.exports = {
         browser.end()
     },
     'Q4H-100 Existing user log in': browser => {
-        browser.url('https://www.nationalmssociety.org/Sign-In')
+        // browser.url('https://www.nationalmssociety.org/Sign-In')
         pageObjects
-            // .click('@signIn')
-            // previous message results in error - element not interactable, same issue with clicking into the seperate pages on each portion
+            .click('@signIn')
+            .api.pause(10000)
+            pageObjects
             .setValue('@username', 'HB_78')
             .setValue('@password', 'some_pa55word')
             .click('@signInSubmit')
-        // .expect.element('@navText').text.to.contain('Hello, Helen').before(10000)
+        .expect.element('@navText').text.to.contain('HELLO, HELEN').before(10000)
     },
     'Q4H-108 Internal links - registered users - What is MS?': browser => {
         pageObjects

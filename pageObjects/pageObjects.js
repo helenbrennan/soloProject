@@ -2,7 +2,7 @@ module.exports = {
     url: ('https://www.nationalmssociety.org'),
     elements: {
         signIn: {
-            selector: ('//*[@id="quick-links"]/div[1]/div'),
+            selector: ('//*[@id="quick-links"]/div[1]/div/a/span[2]'),
             locateStrategy: 'xpath'
         },
         username: {
@@ -12,7 +12,7 @@ module.exports = {
         password: ('#p_lt_zoneContent_pageplaceholder_p_lt_ctl02_SignInUsercontrol_userControlElem_txtPassword'),
         signInSubmit: ('#p_lt_zoneContent_pageplaceholder_p_lt_ctl02_SignInUsercontrol_userControlElem_btnLogin'),
         navText: {
-            selector: ('//span[@class="masthead-nav-text"]'[2]),
+            selector: ('//*[@id="quick-links"]/div[1]/div[1]/span/span[2]'),
             locateStrategy: 'xpath'
         },
         inYourArea: {
