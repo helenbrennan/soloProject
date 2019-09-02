@@ -37,19 +37,19 @@ module.exports = {
             .click('@breadcrumbsBackOne')
             .click('@pageTwo')
             .expect.element('@content').text.to.contain('What Causes MS?')
-            pageObjects
+        pageObjects
             .click('@breadcrumbsBackOne')
             .click('@pageThree')
             .expect.element('@content').text.to.contain('Who Gets MS?')
-            pageObjects
+        pageObjects
             .click('@breadcrumbsBackOne')
             .click('@pageFour')
             .expect.element('@content').text.to.contain('Multiple Sclerosis FAQs')
-            pageObjects
+        pageObjects
             .click('@breadcrumbsBackOne')
             .click('@pageFive')
             .expect.element('@content').text.to.contain('Types of MS')
-            pageObjects
+        pageObjects
             .click('@breadcrumbsBackOne')
             .click('@pageSix')
             .expect.element('@content').text.to.contain('Related Conditions')
@@ -60,6 +60,42 @@ module.exports = {
             .waitForElementVisible('@symptomDXSubNav')
             .click('@symptomsDx')
             .expect.element('@content').text.to.contain('Symptoms & Diagnosis').before(8000)
+        pageObjects
+            .click('@pageOne')
+            .expect.element('@content').text.to.contain('MS Symptoms').before(10000)
+        pageObjects
+            .click('@breadcrumbsBackOne')
+            .click('@pageTwo')
+            .expect.element('@content').text.to.contain('Diagnosing MS')
+        pageObjects
+            .click('@breadcrumbsBackOne')
+            .click('@pageThree')
+            .expect.element('@content').text.to.contain('Magnetic Resonance Imaging')
+        pageObjects
+            .click('@breadcrumbsBackOne')
+            .click('@pageFour')
+            .expect.element('@content').text.to.contain('Cerebrospinal Fluid')
+        pageObjects
+            .click('@breadcrumbsBackOne')
+            .click('@pageFive')
+            .expect.element('@content').text.to.contain('Possible MS')
+        pageObjects
+            .click('@breadcrumbsBackOne')
+            .click('@pageSix')
+            .expect.element('@content').text.to.contain('Clinically Isolated Syndrome')
+        pageObjects
+            .click('@breadcrumbsBackOne')
+            .click('@pageSeven')
+            .expect.element('@content').text.to.contain('Newly Diagnosed')
+        pageObjects
+            .click('@breadcrumbsBackOne')
+            .click('@pageEight')
+            .expect.element('@content').text.to.contain('Other Conditions to Rule Out')
+        pageObjects
+            .click('@breadcrumbsBackOne')
+            .click('@pageNine')
+            .expect.element('@content').text.to.contain('Professional Resource Center')
+
     },
     'Q4H-110 Internal links - registered users - Treating MS': browser => {
         pageObjects
@@ -67,6 +103,36 @@ module.exports = {
             .waitForElementVisible('@treatingMSSubNav')
             .click('@treatingMS')
             .expect.element('@content').text.to.contain('Treating MS').before(8000)
+        pageObjects
+            .click('@pageOne')
+            .expect.element('@content').text.to.contain('Comprehensive Care').before(10000)
+        pageObjects
+            .click('@breadcrumbsBackOne')
+            .click('@pageTwo')
+            .expect.element('@doctorsAndResourcesContent').text.to.contain('Find Doctors & Resources')
+        pageObjects
+            .click('@breadcrumbsBackOne')
+            .click('@pageThree')
+            .expect.element('@content').text.to.contain('Medications')
+        pageObjects
+            .click('@breadCrumbsHome')
+            .moveToElement('@treatingMS', 20, 20)
+            .waitForElementVisible('@treatingMSSubNav')
+            .click('@treatingMS')
+            .click('@pageFour')
+            .expect.element('@content').text.to.contain('Managing Relapses')
+        pageObjects
+            .click('@breadcrumbsBackOne')
+            .click('@pageFive')
+            .expect.element('@content').text.to.contain('Rehabilitation')
+        pageObjects
+            .click('@breadcrumbsBackOne')
+            .click('@pageSix')
+            .expect.element('@content').text.to.contain('Complementary & Alternative Medicines')
+        pageObjects
+            .click('@breadcrumbsBackOne')
+            .click('@pageSeven')
+            .expect.element('@content').text.to.contain('Professional Resource Center')
     },
     'Q4H-111 Internal links - registered users - Resources & Support': browser => {
         pageObjects
@@ -74,6 +140,33 @@ module.exports = {
             .waitForElementVisible('@resourceSubNav')
             .click('@resourceSupport')
             .expect.element('@content').text.to.contain('Resources & Support').before(8000)
+        pageObjects
+            .click('@pageOne')
+            .expect.element('@content').text.to.contain('Library & Education Programs').before(10000)
+        pageObjects
+            .click('@breadcrumbsBackOne')
+            .click('@pageTwo')
+            .expect.element('@content').text.to.contain('Find Support')
+        pageObjects
+            .click('@breadcrumbsBackOne')
+            .click('@pageThree')
+            .expect.element('@content').text.to.contain('Advanced Care Needs')
+        pageObjects
+            .click('@breadcrumbsBackOne')
+            .click('@pageFour')
+            .expect.element('@content').text.to.contain('Resources for Specific Populations')
+        pageObjects
+            .click('@breadcrumbsBackOne')
+            .click('@pageFive')
+            .expect.element('@content').text.to.contain('Find Programs & Services in Your Area')
+        pageObjects
+            .click('@breadcrumbsBackOne')
+            .click('@pageSix')
+            .expect.element('@content').text.to.contain('Calendar of Programs and Events')
+        pageObjects
+            .click('@breadcrumbsBackOne')
+            .click('@pageSeven')
+            .expect.element('@doctorsAndResourcesContent').text.to.contain('Find Doctors & Resources')
     },
     'Q4H-112 Internal links - registered users - Living Well with MS': browser => {
         pageObjects
@@ -81,6 +174,29 @@ module.exports = {
             .waitForElementVisible('@livingWellSubNav')
             .click('@livingWell')
             .expect.element('@content').text.to.contain('Living Well with MS').before(8000)
+        pageObjects
+            .click('@pageOne')
+            .expect.element('@content').text.to.contain('Diet, Exercise & Healthy Behaviors').before(10000)
+        pageObjects
+            .click('@breadcrumbsBackOne')
+            .click('@pageTwo')
+            .expect.element('@content').text.to.contain('Emotional Well-Being')
+        pageObjects
+            .click('@breadcrumbsBackOne')
+            .click('@pageThree')
+            .expect.element('@content').text.to.contain('Spiritual Well-Being')
+        pageObjects
+            .click('@breadcrumbsBackOne')
+            .click('@pageFour')
+            .expect.element('@content').text.to.contain('Cognitive Health')
+        pageObjects
+            .click('@breadcrumbsBackOne')
+            .click('@pageFive')
+            .expect.element('@content').text.to.contain('Work, Home & Leisure')
+        pageObjects
+            .click('@breadcrumbsBackOne')
+            .click('@pageSix')
+            .expect.element('@content').text.to.contain('Relationships')
     },
     'Q4H-113 Internal links - registered users - Research': browser => {
         pageObjects
@@ -88,6 +204,18 @@ module.exports = {
             .waitForElementVisible('@researchSubNav')
             .click('@research')
             .expect.element('@content').text.to.contain('Research').before(8000)
+            pageObjects
+            .click('@researchStop')
+            .expect.element('@content').text.to.contain('Stopping MS In Its Tracks').before(10000)
+        pageObjects
+            .click('@breadcrumbsBackTwo')
+            .click('@researchRestore')
+            .expect.element('@content').text.to.contain("Restoring What's Been Lost")
+        pageObjects
+            .click('@breadcrumbsBackTwo')
+            .click('@researchEnd')
+            .expect.element('@content').text.to.contain('Ending the Disease Forever')
+        
     },
     'Q4H-114 Internal links - registered users - Get Involved': browser => {
         pageObjects
@@ -95,5 +223,6 @@ module.exports = {
             .waitForElementVisible('@getInvolvedSubNav')
             .click('@getInvolved')
             .expect.element('@breadCrumbsCurrent').text.to.contain('GET INVOLVED').before(8000)
+
     }
 }    
