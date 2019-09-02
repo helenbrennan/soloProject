@@ -1,5 +1,14 @@
+var externalLinks = function (browser, smLink) {
+    this
+        .click(smLink)
+        .verify.urlContains(smLink.link)
+        this
+        .closeWindow();
+}
+
 module.exports = {
     url: ('https://www.nationalmssociety.org'),
+    commands: [externalLinks],
     elements: {
         signIn: {
             selector: ('//*[@id="quick-links"]/div[1]/div/a/span[2]'),
@@ -137,6 +146,30 @@ module.exports = {
         },
         nearYouContent: {
             selector: ('//*[@id="content"]/section[1]/div/div[2]/h1'),
+            locateStrategy: 'xpath'
+        }, 
+        facebook: {
+            selector: ('//*[@id="social-links"]/a[1]'),
+            locateStrategy: 'xpath'
+        },
+        twitter: {
+            selector: ('//*[@id="social-links"]/a[2]'),  
+            locateStrategy: 'xpath'          
+        },
+        instagram: {
+            selector: ('//*[@id="social-links"]/a[3]'),
+            locateStrategy: 'xpath'
+        },
+        linkedIn: {
+            selector: ('//*[@id="social-links"]/a[4]'),
+            locateStrategy: 'xpath'
+        },
+        youTube: {
+            selector: ('//*[@id="social-links"]/a[5]'),
+            locateStrategy: 'xpath'
+        },
+        msConnection: {
+            selector: ('//*[@id="social-links"]/a[6]'),
             locateStrategy: 'xpath'
         }
     }
