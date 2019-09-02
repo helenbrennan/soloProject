@@ -32,6 +32,10 @@ module.exports = {
             selector: ('//div[@class="content"]'),
             locateStrategy: 'xpath'
         },
+        doctorsAndResourcesContent: {
+            selector: ('//*[@id="content"]/section[1]/div/header/h1'),
+            locateStrategy: 'xpath'
+        },
         getInvolvedContent: {
             selector: ('//*[@id="get-involved-slider"]/li[2]/div/div/h2'),
             locateStrategy: 'xpath'
@@ -109,6 +113,26 @@ module.exports = {
         breadCrumbsCurrent: ('.CMSBreadCrumbsCurrentItem'),
         breadcrumbsBackOne: {
             selector: ('//*[@class="CMSBreadCrumbsLink"]'),
+            locateStrategy: 'xpath'
+        },
+        breadcrumbBackTwo: {
+            selector: ('//*[@class="CMSBreadCrumbsLink"]'[1]),
+            locateStrategy: 'xpath'
+        },
+        breadCrumbsHome: {
+            selector: ('//*[@class="CMSBreadCrumbsLink home"]'),
+            locateStrategy: 'xpath'
+        },
+        researchStop: {
+            selector: ('//*[@id="content"]/section[1]/div/div[1]/article[1]/div/p/a'),
+            locateStrategy: 'xpath'
+        },
+        researchRestore: {
+            selector: ('//*[@id="content"]/section[1]/div/div[1]/article[2]/div/p/a'),
+            locateStrategy: 'xpath'
+        },
+        researchEnd: {
+            selector: ('//*[@id="content"]/section[1]/div/div[1]/article[3]/div/p/a'),
             locateStrategy: 'xpath'
         }
     }
