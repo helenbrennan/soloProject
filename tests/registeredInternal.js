@@ -111,14 +111,14 @@ module.exports = {
             .click('@pageTwo')
             .expect.element('@doctorsAndResourcesContent').text.to.contain('Find Doctors & Resources')
         pageObjects
-            .click('@breadcrumbsBackOne')
-            .click('@pageThree')
-            .expect.element('@content').text.to.contain('Medications')
-        pageObjects
             .click('@breadCrumbsHome')
             .moveToElement('@treatingMS', 20, 20)
             .waitForElementVisible('@treatingMSSubNav')
             .click('@treatingMS')
+            .click('@pageThree')
+            .expect.element('@content').text.to.contain('Medications')
+        pageObjects
+            .click('@breadcrumbsBackOne')
             .click('@pageFour')
             .expect.element('@content').text.to.contain('Managing Relapses')
         pageObjects
@@ -158,9 +158,11 @@ module.exports = {
         pageObjects
             .click('@breadcrumbsBackOne')
             .click('@pageFive')
-            .expect.element('@content').text.to.contain('Find Programs & Services in Your Area')
+            .expect.element('@nearYouContent').text.to.contain('Near You')
         pageObjects
-            .click('@breadcrumbsBackOne')
+            .moveToElement('@resourceSupport', 20, 20)
+            .waitForElementVisible('@resourceSubNav')
+            .click('@resourceSupport')
             .click('@pageSix')
             .expect.element('@content').text.to.contain('Calendar of Programs and Events')
         pageObjects
@@ -204,18 +206,22 @@ module.exports = {
             .waitForElementVisible('@researchSubNav')
             .click('@research')
             .expect.element('@content').text.to.contain('Research').before(8000)
-            pageObjects
+        pageObjects
             .click('@researchStop')
             .expect.element('@content').text.to.contain('Stopping MS In Its Tracks').before(10000)
         pageObjects
-            .click('@breadcrumbsBackTwo')
+            .moveToElement('@research', 20, 20)
+            .waitForElementVisible('@researchSubNav')
+            .click('@research')
             .click('@researchRestore')
             .expect.element('@content').text.to.contain("Restoring What's Been Lost")
         pageObjects
-            .click('@breadcrumbsBackTwo')
+            .moveToElement('@research', 20, 20)
+            .waitForElementVisible('@researchSubNav')
+            .click('@research')
             .click('@researchEnd')
             .expect.element('@content').text.to.contain('Ending the Disease Forever')
-        
+
     },
     'Q4H-114 Internal links - registered users - Get Involved': browser => {
         pageObjects

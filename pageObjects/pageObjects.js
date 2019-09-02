@@ -115,7 +115,7 @@ module.exports = {
             selector: ('//*[@class="CMSBreadCrumbsLink"]'),
             locateStrategy: 'xpath'
         },
-        breadcrumbBackTwo: {
+        breadcrumbsBackTwo: {
             selector: ('//*[@class="CMSBreadCrumbsLink"]'[1]),
             locateStrategy: 'xpath'
         },
@@ -133,6 +133,10 @@ module.exports = {
         },
         researchEnd: {
             selector: ('//*[@id="content"]/section[1]/div/div[1]/article[3]/div/p/a'),
+            locateStrategy: 'xpath'
+        },
+        nearYouContent: {
+            selector: ('//*[@id="content"]/section[1]/div/div[2]/h1'),
             locateStrategy: 'xpath'
         }
     }
