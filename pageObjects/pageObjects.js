@@ -12,6 +12,7 @@ module.exports = {
         },
         password: ('#p_lt_zoneContent_pageplaceholder_p_lt_ctl02_SignInUsercontrol_userControlElem_txtPassword'),
         signInSubmit: ('#p_lt_zoneContent_pageplaceholder_p_lt_ctl02_SignInUsercontrol_userControlElem_btnLogin'),
+        signInError: ('#p_lt_zoneContent_pageplaceholder_p_lt_ctl02_SignInUsercontrol_userControlElem_lblResults'),
         navText: {
             selector: ('//*[@id="quick-links"]/div[1]/div[1]/span/span[2]'),
             locateStrategy: 'xpath'
@@ -40,11 +41,12 @@ module.exports = {
             selector: ('//*[@id="p_lt_zoneContent_pageplaceholder_p_lt_ctl00_ChapterLocator_btnSearchByZip"]'),
             locateStrategy: 'xpath'        
         },
-        searchBar: ('.search-controls'),
-        // searchBar: {
-        //     selector:('//*[@name="p$lt$zoneMastheadNavColumn2$GoogleSearchbox$txtSearchBox"]'),
-        //     locateStrategy: 'xpath'
-        // }
+        searchBar: ('#txtSearchBox'),
+        searchSubmit: ('.search-controls'),
+        searchResults: {
+            selector: ('//*[@id="content-body"]/div[2]/section/ol/li/a'),
+            locateStrategy: 'xpath'
+        },
         content: {
             selector: ('//div[@class="content"]'),
             locateStrategy: 'xpath'
@@ -154,30 +156,6 @@ module.exports = {
         },
         nearYouContent: {
             selector: ('//*[@id="content"]/section[1]/div/div[2]/h1'),
-            locateStrategy: 'xpath'
-        }, 
-        facebook: {
-            selector: ('//*[@id="social-links"]/a[1]'),
-            locateStrategy: 'xpath'
-        },
-        twitter: {
-            selector: ('//*[@id="social-links"]/a[2]'),  
-            locateStrategy: 'xpath'          
-        },
-        instagram: {
-            selector: ('//*[@id="social-links"]/a[3]'),
-            locateStrategy: 'xpath'
-        },
-        linkedIn: {
-            selector: ('//*[@id="social-links"]/a[4]'),
-            locateStrategy: 'xpath'
-        },
-        youTube: {
-            selector: ('//*[@id="social-links"]/a[5]'),
-            locateStrategy: 'xpath'
-        },
-        msConnection: {
-            selector: ('//*[@id="social-links"]/a[6]'),
             locateStrategy: 'xpath'
         }
     }

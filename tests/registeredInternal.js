@@ -1,10 +1,4 @@
 var pageObjects = {}
-var clickByText = (browser, text) => {
-    pageObjects
-        .useXpath()
-        .click(`//*[text()="${text}"]`)
-        .useCss()
-}
 module.exports = {
     before: browser => {
         pageObjects = browser.page.pageObjects()

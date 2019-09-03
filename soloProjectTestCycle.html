@@ -1,0 +1,3883 @@
+
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+        <title>ZFJ - Html Report for Executions</title>
+        <script type="text/javascript">
+        function altRows ( id ) {
+            if ( document.getElementsByTagName ) {
+                var table = document.getElementById ( id ) ;
+                var rows = table.getElementsByTagName ( "tr" ) ;
+                for ( i = 0 ; i < rows.length ; i ++ ) {
+                    if ( i % 2 == 0 ) {
+                        rows[ i ].className = "evenrowcolor" ;
+                    } else {
+                        rows[ i ].className = "oddrowcolor" ;
+                    }
+                }
+            }
+        }
+        window.onload = function ( ) {
+            altRows ( 'alternatecolor' ) ;
+        }
+        </script>
+        <style type="text/css">
+        table.altrowstable {
+            font-family : verdana, arial, sans-serif ;
+            font-size : 9px ;
+            padding-left : 50px ;
+            color : #333333 ;
+            border-width : 1px ;
+            border-color : #a9c6c9 ;
+            border-collapse : collapse ;
+        }
+        table.altrowstable th {
+            border-width : 1px ;
+            padding : 8px ;
+            border-style : solid ;
+            border-color : #a9c6c9 ;
+        }
+        table.altrowstable thead {
+            font-weight : bold ;
+        }
+        table.altrowstable td {
+            border-width : 1px ;
+            padding : 8px ;
+            border-style : solid ;
+            border-color : #a9c6c9 ;
+        }
+        .oddrowcolor {
+            background-color : #d4e3e5 ;
+        }
+        .evenrowcolor {
+            background-color : none ;
+        }
+        </style>
+    </head>
+    <body>
+        <table class="altrowstable" id="alternatecolor" border="1" cellspacing="0" cellpadding="0" style="padding-left : 50 px ; overflow-y = scroll ;">
+            <thead>
+                <th>ExecutionId</th>
+                <th>Cycle</th>
+                <th>Folder Name</th>
+                <th>Issue Key</th>
+                <th>Test Summary</th>
+                <th>Project</th>
+                <th>Component</th>
+                <th>Version</th>
+                <th>Priority</th>
+                <th>Executed By</th>
+                <th>Executed On</th>
+                <th>Execution Status</th>
+                <th>Execution Defect(s)</th>
+                <th>Creation Date</th>
+                <th>Assigned To</th>
+                <th>Execution Custom Field</th>
+                <th>Work Flow Status</th>
+                <th>Total Execution Time</th>
+                <th>Total Logged Time</th>
+                <th>StepId</th>
+                <th>OrderId</th>
+                <th>Step</th>
+                <th>Test Data</th>
+                <th>Expected Result</th>
+                <th>Step Result</th>
+                <th>Comment</th>
+                <th>Test Step Custom Field</th>
+            </thead>
+            <tbody>
+            
+                
+                    <tr>
+                        <td rowspan="17">11b0cdee-f860-4273-9368-c5a90d388610</td>
+                        <td rowspan="17">Helen Brennan Solo Project</td>
+                        <td rowspan="17"></td>
+                        <td rowspan="17">Q4H-111</td>
+                        <td rowspan="17">Internal links - registered users - Resources &amp; Support</td>
+                        <td rowspan="17">QLH4 Helen</td>
+                        <td rowspan="17"></td>
+                        <td rowspan="17">Unscheduled</td>
+                        <td rowspan="17">Medium</td>
+                        <td rowspan="17">Helen Brennan</td>
+                        <td rowspan="17">Tue Sep 03 14:26:02 PDT 2019</td>
+                        <td rowspan="17">PASS</td>
+                        <td rowspan="17"></td>
+                        <td rowspan="17">Tue Sep 03 14:24:57 PDT 2019</td>
+                        <td rowspan="17">Helen Brennan</td>
+                        <td rowspan="17"></td>
+                        <td rowspan="17"></td>
+                        <td rowspan="17"></td>
+                        <td rowspan="17"></td>
+                        
+                            <td>54a8b2a1-5143-438f-943c-6c68d4ea8608</td>
+                            <td>1</td>
+                            <td><p>Access the website</p></td>
+                            <td><p>https://www.nationalmssociety.org</p></td>
+                            <td><p>The website displays.</p></td>
+                            <td>UNEXECUTED</td>
+                            <td></td>
+                            <td></td>
+                        
+                    </tr>
+                    
+                        <tr>
+                            <td>786183f1-7ffc-462f-9132-5ef6e02b435e</td>
+                            <td>2</td>
+                            <td><p>Ensure that the link at the top says 'Hello, Helen' and not 'Sign In'.</p></td>
+                            <td></td>
+                            <td></td>
+                            <td>UNEXECUTED</td>
+                            <td></td>
+                            <td></td>
+                        </tr>
+                    
+                        <tr>
+                            <td>b70fc7da-c04c-46d7-ace2-fbe441cd8ebb</td>
+                            <td>3</td>
+                            <td><p>Click the 'Treating MS' link in the menu bar.</p></td>
+                            <td></td>
+                            <td><p>The 'Treating MS' page is displayed.</p></td>
+                            <td>UNEXECUTED</td>
+                            <td></td>
+                            <td></td>
+                        </tr>
+                    
+                        <tr>
+                            <td>40d1b332-0cce-4c93-a625-97de588c8164</td>
+                            <td>4</td>
+                            <td><p>Click the 'Comprehensive Care' link</p></td>
+                            <td></td>
+                            <td><p>The 'Comprehensive Care' page is displayed.</p></td>
+                            <td>UNEXECUTED</td>
+                            <td></td>
+                            <td></td>
+                        </tr>
+                    
+                        <tr>
+                            <td>0f56a262-05ef-4059-81e8-fdd0641397f9</td>
+                            <td>5</td>
+                            <td><p>Click the breadcrumb link to go back to the 'Treating MS' page.</p></td>
+                            <td></td>
+                            <td><p>The 'Treating MS' page is displayed.</p></td>
+                            <td>UNEXECUTED</td>
+                            <td></td>
+                            <td></td>
+                        </tr>
+                    
+                        <tr>
+                            <td>fa045bd8-8e0b-4fc6-9085-f025f530659a</td>
+                            <td>6</td>
+                            <td><p>Click the 'Find Doctors & Resources' link.</p></td>
+                            <td></td>
+                            <td><p>The 'Find Doctors & Resources' page is displayed.</p></td>
+                            <td>UNEXECUTED</td>
+                            <td></td>
+                            <td></td>
+                        </tr>
+                    
+                        <tr>
+                            <td>12bd2438-45ee-421b-b62e-9c4231728437</td>
+                            <td>7</td>
+                            <td><p>Click the breadcrumb link to go back to the 'Treating MS' page.</p></td>
+                            <td></td>
+                            <td><p>The 'Treating MS' page is displayed.</p></td>
+                            <td>UNEXECUTED</td>
+                            <td></td>
+                            <td></td>
+                        </tr>
+                    
+                        <tr>
+                            <td>fe897bb0-9235-4ea5-81e0-159807adbb1c</td>
+                            <td>8</td>
+                            <td><p>Click the 'Medications' link</p></td>
+                            <td></td>
+                            <td><p>The 'Medications' page is displayed</p></td>
+                            <td>UNEXECUTED</td>
+                            <td></td>
+                            <td></td>
+                        </tr>
+                    
+                        <tr>
+                            <td>5a376905-3159-4ed7-b09c-2efc3ebd3b7e</td>
+                            <td>9</td>
+                            <td><p>Click the breadcrumb link to go back to the 'Treating MS' page.</p></td>
+                            <td></td>
+                            <td><p>The 'Treating MS' page is displayed.</p></td>
+                            <td>UNEXECUTED</td>
+                            <td></td>
+                            <td></td>
+                        </tr>
+                    
+                        <tr>
+                            <td>58a728ec-db1e-4684-acfa-dde1c2d22666</td>
+                            <td>10</td>
+                            <td><p>Click the 'Managing Relapses' link</p></td>
+                            <td></td>
+                            <td><p>The 'Managing Relapses' page is displayed</p></td>
+                            <td>UNEXECUTED</td>
+                            <td></td>
+                            <td></td>
+                        </tr>
+                    
+                        <tr>
+                            <td>d0c602a4-3c67-4875-841a-4c58e21a81bd</td>
+                            <td>11</td>
+                            <td><p>Click the breadcrumb link to go back to the 'Treating MS' page.</p></td>
+                            <td></td>
+                            <td><p>The 'What Is MS?' page is displayed.</p></td>
+                            <td>UNEXECUTED</td>
+                            <td></td>
+                            <td></td>
+                        </tr>
+                    
+                        <tr>
+                            <td>dd03e770-d66b-4289-90b7-417bc5376544</td>
+                            <td>12</td>
+                            <td><p>Click the 'Rehabilitation' link</p></td>
+                            <td></td>
+                            <td><p>The 'Rehabilitation' page is displayed.</p></td>
+                            <td>UNEXECUTED</td>
+                            <td></td>
+                            <td></td>
+                        </tr>
+                    
+                        <tr>
+                            <td>830df0d3-48f6-4b80-bef2-378568f79dd1</td>
+                            <td>13</td>
+                            <td><p>Click the breadcrumb link to go back to the 'Treating MS' page.</p></td>
+                            <td></td>
+                            <td><p>The 'Treating MS' page is displayed.</p></td>
+                            <td>UNEXECUTED</td>
+                            <td></td>
+                            <td></td>
+                        </tr>
+                    
+                        <tr>
+                            <td>05117604-3b95-4595-b47a-c98bec1147bf</td>
+                            <td>14</td>
+                            <td><p>Click the 'Clinically Isolated Syndrome (CIS)' link</p></td>
+                            <td></td>
+                            <td><p>The 'Complementary & Alternative Medicines' page is displayed.</p></td>
+                            <td>UNEXECUTED</td>
+                            <td></td>
+                            <td></td>
+                        </tr>
+                    
+                        <tr>
+                            <td>f0e496ad-bb49-419c-b86f-6d2280a0ebb3</td>
+                            <td>15</td>
+                            <td><p>Click the breadcrumb link to go back to the 'Treating MS' page.</p></td>
+                            <td></td>
+                            <td><p>The 'Treating MS' page is displayed.</p></td>
+                            <td>UNEXECUTED</td>
+                            <td></td>
+                            <td></td>
+                        </tr>
+                    
+                        <tr>
+                            <td>822d8fa1-8ff7-4367-8adf-b717b7b83635</td>
+                            <td>16</td>
+                            <td><p>Click the 'For Clinicians' link.</p></td>
+                            <td></td>
+                            <td><p>The 'For Clinicians' page is displayed.</p></td>
+                            <td>UNEXECUTED</td>
+                            <td></td>
+                            <td></td>
+                        </tr>
+                    
+                        <tr>
+                            <td>b484a520-f887-4131-ad52-a79942780b71</td>
+                            <td>17</td>
+                            <td><p>Click the breadcrumb link to go back to the main page.</p></td>
+                            <td></td>
+                            <td><p>The main page is displayed.</p></td>
+                            <td>UNEXECUTED</td>
+                            <td></td>
+                            <td></td>
+                        </tr>
+                    
+                
+            
+                
+                    <tr>
+                        <td rowspan="18">3b266847-8450-4ea4-b62e-09e5acf3b69f</td>
+                        <td rowspan="18">Helen Brennan Solo Project</td>
+                        <td rowspan="18"></td>
+                        <td rowspan="18">Q4H-114</td>
+                        <td rowspan="18">Internal links - registered users - Get Involved</td>
+                        <td rowspan="18">QLH4 Helen</td>
+                        <td rowspan="18"></td>
+                        <td rowspan="18">Unscheduled</td>
+                        <td rowspan="18">Medium</td>
+                        <td rowspan="18">Helen Brennan</td>
+                        <td rowspan="18">Tue Sep 03 14:26:07 PDT 2019</td>
+                        <td rowspan="18">PASS</td>
+                        <td rowspan="18"></td>
+                        <td rowspan="18">Tue Sep 03 14:25:00 PDT 2019</td>
+                        <td rowspan="18">Helen Brennan</td>
+                        <td rowspan="18"></td>
+                        <td rowspan="18"></td>
+                        <td rowspan="18"></td>
+                        <td rowspan="18"></td>
+                        
+                            <td>f34e2ee5-78ac-43b2-9e50-c46cdbb13626</td>
+                            <td>1</td>
+                            <td><p>Access the website</p></td>
+                            <td><p>https://www.nationalmssociety.org</p></td>
+                            <td><p>The website displays.</p></td>
+                            <td>UNEXECUTED</td>
+                            <td></td>
+                            <td></td>
+                        
+                    </tr>
+                    
+                        <tr>
+                            <td>d90a7a92-efd9-4a60-b774-7a4c42642a68</td>
+                            <td>2</td>
+                            <td><p>Ensure that the link at the top says 'Hello, Helen' and not 'Sign In'.</p></td>
+                            <td></td>
+                            <td></td>
+                            <td>UNEXECUTED</td>
+                            <td></td>
+                            <td></td>
+                        </tr>
+                    
+                        <tr>
+                            <td>0979f3b2-59da-41f8-9fb1-a011daeb6fb8</td>
+                            <td>3</td>
+                            <td><p>Click the 'Get Involved' link in the menu bar.</p></td>
+                            <td></td>
+                            <td><p>The 'Get Involved' page is displayed.</p></td>
+                            <td>UNEXECUTED</td>
+                            <td></td>
+                            <td></td>
+                        </tr>
+                    
+                        <tr>
+                            <td>dba77a5f-c1a1-47f7-8d41-4008883e0680</td>
+                            <td>4</td>
+                            <td><p>Click the 'Find An Event Participant' button in the box labeled Support an Event Participant</p></td>
+                            <td></td>
+                            <td><p>The 'Find a Participant or Team' page is displayed.</p></td>
+                            <td>UNEXECUTED</td>
+                            <td></td>
+                            <td></td>
+                        </tr>
+                    
+                        <tr>
+                            <td>e0a9a7f0-bfa4-4144-be5f-235dd6a499b8</td>
+                            <td>5</td>
+                            <td><p>Click the 'Get Involved' link in the menu bar.</p></td>
+                            <td></td>
+                            <td><p>The 'Get Involved' page is displayed.</p></td>
+                            <td>UNEXECUTED</td>
+                            <td></td>
+                            <td></td>
+                        </tr>
+                    
+                        <tr>
+                            <td>3ee5f78e-052e-4eaf-89d6-f7f4b351cf27</td>
+                            <td>6</td>
+                            <td><p>Click the 'Take Action' button in the box labeled Advocate for Change</p></td>
+                            <td></td>
+                            <td><p>The 'Advocate for Change' page is displayed.</p></td>
+                            <td>UNEXECUTED</td>
+                            <td></td>
+                            <td></td>
+                        </tr>
+                    
+                        <tr>
+                            <td>8cdc51b5-dc65-47f2-8c2a-4b98660d1219</td>
+                            <td>7</td>
+                            <td><p>Click the breadcrumb link to go back to the 'Get Involved' page.</p></td>
+                            <td></td>
+                            <td><p>The 'Get Involved' page is displayed.</p></td>
+                            <td>UNEXECUTED</td>
+                            <td></td>
+                            <td></td>
+                        </tr>
+                    
+                        <tr>
+                            <td>7fe70642-a472-4a8c-a17f-809eae072a10</td>
+                            <td>8</td>
+                            <td><p>Click the 'Find Volunteer Opportunities' button in the box labeled 'Volunteer Your Time'</p></td>
+                            <td></td>
+                            <td><p>The 'Volunteer' page is displayed.</p></td>
+                            <td>UNEXECUTED</td>
+                            <td></td>
+                            <td></td>
+                        </tr>
+                    
+                        <tr>
+                            <td>94819932-38b5-4a99-b5cd-e33457a8d7c4</td>
+                            <td>9</td>
+                            <td><p>Click the breadcrumb link to go back to the 'Get Involved' page.</p></td>
+                            <td></td>
+                            <td><p>The 'Get Involved' page is displayed.</p></td>
+                            <td>UNEXECUTED</td>
+                            <td></td>
+                            <td></td>
+                        </tr>
+                    
+                        <tr>
+                            <td>66e13a0f-2021-42ed-8ae2-6942f7a0f691</td>
+                            <td>10</td>
+                            <td><p>Click the 'Raise Awareness' button in the box labeled 'Raise Awareness'</p></td>
+                            <td></td>
+                            <td><p>The 'Raise Awareness' page is displayed</p></td>
+                            <td>UNEXECUTED</td>
+                            <td></td>
+                            <td></td>
+                        </tr>
+                    
+                        <tr>
+                            <td>368c57c9-7bf0-4cbf-991e-8c1261046516</td>
+                            <td>11</td>
+                            <td><p>Click the breadcrumb link to go back to the 'Get Involved' page.</p></td>
+                            <td></td>
+                            <td><p>The 'Get Involved' page is displayed.</p></td>
+                            <td>UNEXECUTED</td>
+                            <td></td>
+                            <td></td>
+                        </tr>
+                    
+                        <tr>
+                            <td>d9e6e8d5-f133-46e6-8161-585ec601942b</td>
+                            <td>12</td>
+                            <td><p>Click the 'Join Now' button in the box labeled 'Join The Community'</p></td>
+                            <td></td>
+                            <td><p>A new tab is opened to msconnection.org</p></td>
+                            <td>UNEXECUTED</td>
+                            <td></td>
+                            <td></td>
+                        </tr>
+                    
+                        <tr>
+                            <td>38bfecc8-e876-4164-bf2a-2649575aaf2d</td>
+                            <td>13</td>
+                            <td><p>Close the tab and go back to https://www.nationalmssociety.org website.</p></td>
+                            <td></td>
+                            <td><p>The 'Get Involved' page is still displayed.</p></td>
+                            <td>UNEXECUTED</td>
+                            <td></td>
+                            <td></td>
+                        </tr>
+                    
+                        <tr>
+                            <td>55765567-5b85-4c06-bd9d-fbbbaa3f18fc</td>
+                            <td>14</td>
+                            <td><p>Click the 'Find A Chapter' button in the box labeled 'Connect in Your Area'</p></td>
+                            <td></td>
+                            <td><p>The 'Near You' page is displayed.</p></td>
+                            <td>UNEXECUTED</td>
+                            <td></td>
+                            <td></td>
+                        </tr>
+                    
+                        <tr>
+                            <td>1d3fe518-1354-423f-9b69-9d4c97fd3022</td>
+                            <td>15</td>
+                            <td><p>Click the 'Get Involved' link in the menu bar.</p></td>
+                            <td></td>
+                            <td><p>The 'Get Involved' page is displayed.</p></td>
+                            <td>UNEXECUTED</td>
+                            <td></td>
+                            <td></td>
+                        </tr>
+                    
+                        <tr>
+                            <td>04888450-d35b-4867-8cf2-c07ea5a898b0</td>
+                            <td>16</td>
+                            <td><p>Click the 'Donate Now' button in the box labeled 'Make a Donation'</p></td>
+                            <td></td>
+                            <td><p>The 'Donate' page is displayed.</p></td>
+                            <td>UNEXECUTED</td>
+                            <td></td>
+                            <td></td>
+                        </tr>
+                    
+                        <tr>
+                            <td>bb00d85e-4cf9-4b37-8dd4-4d3a48a02b6a</td>
+                            <td>17</td>
+                            <td><p>Click the breadcrumb link to go back to the main page.</p></td>
+                            <td></td>
+                            <td><p>The main page is displayed.</p></td>
+                            <td>UNEXECUTED</td>
+                            <td></td>
+                            <td></td>
+                        </tr>
+                    
+                        <tr>
+                            <td>db7f1c0c-992e-4b50-a982-955f92f853d5</td>
+                            <td>18</td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <td>UNEXECUTED</td>
+                            <td></td>
+                            <td></td>
+                        </tr>
+                    
+                
+            
+                
+                    <tr>
+                        <td rowspan="17">6b37d3e7-4896-41a9-adfb-4c7c235d079f</td>
+                        <td rowspan="17">Helen Brennan Solo Project</td>
+                        <td rowspan="17"></td>
+                        <td rowspan="17">Q4H-110</td>
+                        <td rowspan="17">Internal links - registered users - Treating MS</td>
+                        <td rowspan="17">QLH4 Helen</td>
+                        <td rowspan="17"></td>
+                        <td rowspan="17">Unscheduled</td>
+                        <td rowspan="17">Medium</td>
+                        <td rowspan="17">Helen Brennan</td>
+                        <td rowspan="17">Tue Sep 03 14:26:12 PDT 2019</td>
+                        <td rowspan="17">PASS</td>
+                        <td rowspan="17"></td>
+                        <td rowspan="17">Tue Sep 03 14:24:56 PDT 2019</td>
+                        <td rowspan="17">Helen Brennan</td>
+                        <td rowspan="17"></td>
+                        <td rowspan="17"></td>
+                        <td rowspan="17"></td>
+                        <td rowspan="17"></td>
+                        
+                            <td>72c9093d-6322-4ab2-99a7-29e359250e76</td>
+                            <td>1</td>
+                            <td><p>Access the website</p></td>
+                            <td><p>https://www.nationalmssociety.org</p></td>
+                            <td><p>The website displays.</p></td>
+                            <td>UNEXECUTED</td>
+                            <td></td>
+                            <td></td>
+                        
+                    </tr>
+                    
+                        <tr>
+                            <td>03e848c8-a085-4504-9ac6-240652f57e77</td>
+                            <td>2</td>
+                            <td><p>Ensure that the link at the top says 'Hello, Helen' and not 'Sign In'.</p></td>
+                            <td></td>
+                            <td></td>
+                            <td>UNEXECUTED</td>
+                            <td></td>
+                            <td></td>
+                        </tr>
+                    
+                        <tr>
+                            <td>53607d26-63aa-4aa9-886e-28d4cab2e48e</td>
+                            <td>3</td>
+                            <td><p>Click the 'Resources & Support' link in the menu bar.</p></td>
+                            <td></td>
+                            <td><p>The 'Resources & Support' page is displayed.</p></td>
+                            <td>UNEXECUTED</td>
+                            <td></td>
+                            <td></td>
+                        </tr>
+                    
+                        <tr>
+                            <td>dcb74223-1695-4e73-b058-54fa2338fa64</td>
+                            <td>4</td>
+                            <td><p>Click the 'Library & Education Programs' link</p></td>
+                            <td></td>
+                            <td><p>The 'Comprehensive Care' page is displayed.</p></td>
+                            <td>UNEXECUTED</td>
+                            <td></td>
+                            <td></td>
+                        </tr>
+                    
+                        <tr>
+                            <td>acf99d73-2d14-439c-ab07-d30af242daa9</td>
+                            <td>5</td>
+                            <td><p>Click the breadcrumb link to go back to the 'Resources & Support' page.</p></td>
+                            <td></td>
+                            <td><p>The 'Resources & Support' page is displayed.</p></td>
+                            <td>UNEXECUTED</td>
+                            <td></td>
+                            <td></td>
+                        </tr>
+                    
+                        <tr>
+                            <td>fd372527-2a8a-469b-8073-85a6e1f0f874</td>
+                            <td>6</td>
+                            <td><p>Click the 'Find Support' link</p></td>
+                            <td></td>
+                            <td><p>The 'Find Support' page is displayed</p></td>
+                            <td>UNEXECUTED</td>
+                            <td></td>
+                            <td></td>
+                        </tr>
+                    
+                        <tr>
+                            <td>fa63d462-4401-433f-bbb6-05ba69488380</td>
+                            <td>7</td>
+                            <td><p>Click the breadcrumb link to go back to the 'Resources & Support' page.</p></td>
+                            <td></td>
+                            <td><p>The 'Resources & Support' page is displayed.</p></td>
+                            <td>UNEXECUTED</td>
+                            <td></td>
+                            <td></td>
+                        </tr>
+                    
+                        <tr>
+                            <td>f597817b-a7ed-4afb-be96-de3775206d0b</td>
+                            <td>8</td>
+                            <td><p>Click the 'Advanced Care Needs' link</p></td>
+                            <td></td>
+                            <td><p>The 'Managing Relapses' page is displayed</p></td>
+                            <td>UNEXECUTED</td>
+                            <td></td>
+                            <td></td>
+                        </tr>
+                    
+                        <tr>
+                            <td>ad9815c6-6b36-402e-ad35-456d6e953a1f</td>
+                            <td>9</td>
+                            <td><p>Click the breadcrumb link to go back to the 'Resources & Support' page.</p></td>
+                            <td></td>
+                            <td><p>The 'Resources & Support' page is displayed.</p></td>
+                            <td>UNEXECUTED</td>
+                            <td></td>
+                            <td></td>
+                        </tr>
+                    
+                        <tr>
+                            <td>df87d10f-7ab6-423d-b080-133f82d5ccfb</td>
+                            <td>10</td>
+                            <td><p>Click the 'Resources for Specific Populations' link</p></td>
+                            <td></td>
+                            <td><p>The 'Rehabilitation' page is displayed.</p></td>
+                            <td>UNEXECUTED</td>
+                            <td></td>
+                            <td></td>
+                        </tr>
+                    
+                        <tr>
+                            <td>a75fa1c4-8c04-4e44-a58a-35540016540d</td>
+                            <td>11</td>
+                            <td><p>Click the breadcrumb link to go back to the 'Resources & Support' page.</p></td>
+                            <td></td>
+                            <td><p>The 'Resources & Support' page is displayed.</p></td>
+                            <td>UNEXECUTED</td>
+                            <td></td>
+                            <td></td>
+                        </tr>
+                    
+                        <tr>
+                            <td>5864317a-6eca-47ce-8b92-c0c3a1c49e1c</td>
+                            <td>12</td>
+                            <td><p>Click the 'Find Programs & Services in Your Area' link</p></td>
+                            <td></td>
+                            <td><p>The 'Near You' page is displayed.</p></td>
+                            <td>UNEXECUTED</td>
+                            <td></td>
+                            <td></td>
+                        </tr>
+                    
+                        <tr>
+                            <td>32eaa2b1-590f-4e4a-9285-e51bbd2bb470</td>
+                            <td>13</td>
+                            <td><p>Click the 'Resources & Support' link in the menu bar.</p></td>
+                            <td></td>
+                            <td><p>The 'Resources & Support' page is displayed.</p></td>
+                            <td>UNEXECUTED</td>
+                            <td></td>
+                            <td></td>
+                        </tr>
+                    
+                        <tr>
+                            <td>f1eec325-9e3f-4e6d-a0d8-5a1db525a082</td>
+                            <td>14</td>
+                            <td><p>Click the 'Calendar of Programs and Events' link.</p></td>
+                            <td></td>
+                            <td><p>The 'For Clinicians' page is displayed.</p></td>
+                            <td>UNEXECUTED</td>
+                            <td></td>
+                            <td></td>
+                        </tr>
+                    
+                        <tr>
+                            <td>f9f7e0e6-d7df-40d1-b786-ce95d0ce9b6d</td>
+                            <td>15</td>
+                            <td><p>Click the breadcrumb link to go back to the 'Resources & Support' page.</p></td>
+                            <td></td>
+                            <td><p>The 'Resources & Support' page is displayed.</p></td>
+                            <td>UNEXECUTED</td>
+                            <td></td>
+                            <td></td>
+                        </tr>
+                    
+                        <tr>
+                            <td>c0904ad2-a3f5-471b-98e1-804f57a81d98</td>
+                            <td>16</td>
+                            <td><p>Click the 'Find Doctors & Resources' link.</p></td>
+                            <td></td>
+                            <td><p>The 'Find Doctors & Resources' page is displayed.</p></td>
+                            <td>UNEXECUTED</td>
+                            <td></td>
+                            <td></td>
+                        </tr>
+                    
+                        <tr>
+                            <td>b17c06e4-94b7-42e7-8262-76070fe57693</td>
+                            <td>17</td>
+                            <td><p>Click the breadcrumb link to go back to the main page.</p></td>
+                            <td></td>
+                            <td><p>The main page is displayed.</p></td>
+                            <td>UNEXECUTED</td>
+                            <td></td>
+                            <td></td>
+                        </tr>
+                    
+                
+            
+                
+                    <tr>
+                        <td rowspan="1">0a2d16ed-41f9-4207-a0b7-5b6d326962a0</td>
+                        <td rowspan="1">Helen Brennan Solo Project</td>
+                        <td rowspan="1"></td>
+                        <td rowspan="1">Q4H-98</td>
+                        <td rowspan="1">Website Access</td>
+                        <td rowspan="1">QLH4 Helen</td>
+                        <td rowspan="1"></td>
+                        <td rowspan="1">Unscheduled</td>
+                        <td rowspan="1">Highest</td>
+                        <td rowspan="1">Helen Brennan</td>
+                        <td rowspan="1">Tue Sep 03 14:26:00 PDT 2019</td>
+                        <td rowspan="1">PASS</td>
+                        <td rowspan="1"></td>
+                        <td rowspan="1">Tue Sep 03 14:24:47 PDT 2019</td>
+                        <td rowspan="1">Helen Brennan</td>
+                        <td rowspan="1"></td>
+                        <td rowspan="1"></td>
+                        <td rowspan="1"></td>
+                        <td rowspan="1"></td>
+                        
+                            <td>a15574cd-53d4-4ccb-986a-611f4e9e6c91</td>
+                            <td>1</td>
+                            <td><p>Access National MS Society Organization website</p></td>
+                            <td><p>https://www.nationalmssociety.org</p></td>
+                            <td><p>The website home displays.</p></td>
+                            <td>UNEXECUTED</td>
+                            <td></td>
+                            <td></td>
+                        
+                    </tr>
+                    
+                
+            
+                
+                    <tr>
+                        <td rowspan="16">6582360b-bafc-4adc-8b64-b6cd8d08abb9</td>
+                        <td rowspan="16">Helen Brennan Solo Project</td>
+                        <td rowspan="16"></td>
+                        <td rowspan="16">Q4H-112</td>
+                        <td rowspan="16">Internal links - registered users - Living Well with MS</td>
+                        <td rowspan="16">QLH4 Helen</td>
+                        <td rowspan="16"></td>
+                        <td rowspan="16">Unscheduled</td>
+                        <td rowspan="16">Medium</td>
+                        <td rowspan="16">Helen Brennan</td>
+                        <td rowspan="16">Tue Sep 03 14:26:09 PDT 2019</td>
+                        <td rowspan="16">PASS</td>
+                        <td rowspan="16"></td>
+                        <td rowspan="16">Tue Sep 03 14:24:58 PDT 2019</td>
+                        <td rowspan="16">Helen Brennan</td>
+                        <td rowspan="16"></td>
+                        <td rowspan="16"></td>
+                        <td rowspan="16"></td>
+                        <td rowspan="16"></td>
+                        
+                            <td>ae026f6d-79f2-4584-b4f0-3ae1942141f7</td>
+                            <td>1</td>
+                            <td><p>Access the website</p></td>
+                            <td><p>https://www.nationalmssociety.org</p></td>
+                            <td><p>The website displays.</p></td>
+                            <td>UNEXECUTED</td>
+                            <td></td>
+                            <td></td>
+                        
+                    </tr>
+                    
+                        <tr>
+                            <td>bacdfd4f-2896-44ee-8554-49a9d0e3deef</td>
+                            <td>2</td>
+                            <td><p>Ensure that the link at the top says 'Hello, Helen' and not 'Sign In'.</p></td>
+                            <td></td>
+                            <td></td>
+                            <td>UNEXECUTED</td>
+                            <td></td>
+                            <td></td>
+                        </tr>
+                    
+                        <tr>
+                            <td>2542b53c-9e94-417c-94cb-1d20b4e4c75f</td>
+                            <td>3</td>
+                            <td><p>Click the 'Living Well' link in the menu bar.</p></td>
+                            <td></td>
+                            <td><p>The 'Living Well' page is displayed.</p></td>
+                            <td>UNEXECUTED</td>
+                            <td></td>
+                            <td></td>
+                        </tr>
+                    
+                        <tr>
+                            <td>380e3bf9-f2f4-4875-b8b4-c706b07091dc</td>
+                            <td>4</td>
+                            <td><p>Click the 'Diet, Exercise & Healthy Behaviors' link</p></td>
+                            <td></td>
+                            <td><p>The 'Diet, Exercise & Healthy Behaviors' page is displayed.</p></td>
+                            <td>UNEXECUTED</td>
+                            <td></td>
+                            <td></td>
+                        </tr>
+                    
+                        <tr>
+                            <td>d37c929f-355e-489e-b434-2d85769738f4</td>
+                            <td>5</td>
+                            <td><p>Click the breadcrumb link to go back to the 'Living Well' page.</p></td>
+                            <td></td>
+                            <td><p>The 'Living Well' page is displayed.</p></td>
+                            <td>UNEXECUTED</td>
+                            <td></td>
+                            <td></td>
+                        </tr>
+                    
+                        <tr>
+                            <td>1034da17-56c8-4685-8e20-c66cb164b55d</td>
+                            <td>6</td>
+                            <td><p>Click the 'Emotional Well-Being' link.</p></td>
+                            <td></td>
+                            <td><p>The 'Emotional Well-Being' page is displayed.</p></td>
+                            <td>UNEXECUTED</td>
+                            <td></td>
+                            <td></td>
+                        </tr>
+                    
+                        <tr>
+                            <td>87364370-3501-4151-972a-098b6dcee15d</td>
+                            <td>7</td>
+                            <td><p>Click the breadcrumb link to go back to the 'Living Well' page.</p></td>
+                            <td></td>
+                            <td><p>The 'Living Well' page is displayed.</p></td>
+                            <td>UNEXECUTED</td>
+                            <td></td>
+                            <td></td>
+                        </tr>
+                    
+                        <tr>
+                            <td>f7827f26-55ed-4aba-9930-243616a3ca42</td>
+                            <td>8</td>
+                            <td><p>Click the 'Spiritual Well-Being' link</p></td>
+                            <td></td>
+                            <td><p>The 'Spiritual Well-Being' page is displayed</p></td>
+                            <td>UNEXECUTED</td>
+                            <td></td>
+                            <td></td>
+                        </tr>
+                    
+                        <tr>
+                            <td>b83f8bab-4f03-4747-92e7-4cc61726a17f</td>
+                            <td>9</td>
+                            <td><p>Click the breadcrumb link to go back to the 'Living Well' page.</p></td>
+                            <td></td>
+                            <td><p>The 'Living Well' page is displayed.</p></td>
+                            <td>UNEXECUTED</td>
+                            <td></td>
+                            <td></td>
+                        </tr>
+                    
+                        <tr>
+                            <td>8fec93b4-6424-407e-ad3c-d8c3407475d1</td>
+                            <td>10</td>
+                            <td><p>Click the 'Cognitive Health' link</p></td>
+                            <td></td>
+                            <td><p>The 'Managing Relapses' page is displayed</p></td>
+                            <td>UNEXECUTED</td>
+                            <td></td>
+                            <td></td>
+                        </tr>
+                    
+                        <tr>
+                            <td>1145e490-634b-49da-a65d-91c184d41c7f</td>
+                            <td>11</td>
+                            <td><p>Click the breadcrumb link to go back to the 'Living Well' page.</p></td>
+                            <td></td>
+                            <td><p>The 'Living Well' page is displayed.</p></td>
+                            <td>UNEXECUTED</td>
+                            <td></td>
+                            <td></td>
+                        </tr>
+                    
+                        <tr>
+                            <td>1334fd90-048e-4cd1-bc0f-21f9930af294</td>
+                            <td>12</td>
+                            <td><p>Click the 'Work, Home & Leisure' link</p></td>
+                            <td></td>
+                            <td><p>The 'Work, Home & Leisure' page is displayed.</p></td>
+                            <td>UNEXECUTED</td>
+                            <td></td>
+                            <td></td>
+                        </tr>
+                    
+                        <tr>
+                            <td>6d393974-eec0-4a66-b5cf-1d72d6274a01</td>
+                            <td>13</td>
+                            <td><p>Click the breadcrumb link to go back to the 'Living Well' page.</p></td>
+                            <td></td>
+                            <td><p>The 'Living Well' page is displayed.</p></td>
+                            <td>UNEXECUTED</td>
+                            <td></td>
+                            <td></td>
+                        </tr>
+                    
+                        <tr>
+                            <td>f31fcd39-45c9-430b-bd4a-a6e794ad5e5a</td>
+                            <td>14</td>
+                            <td><p>Click the 'Relationships' link</p></td>
+                            <td></td>
+                            <td><p>The 'Relationships' page is displayed.</p></td>
+                            <td>UNEXECUTED</td>
+                            <td></td>
+                            <td></td>
+                        </tr>
+                    
+                        <tr>
+                            <td>66fe3a05-d323-41ac-991a-4a18018b13e9</td>
+                            <td>15</td>
+                            <td><p>Click the breadcrumb link to go back to the 'Living Well' page.</p></td>
+                            <td></td>
+                            <td><p>The 'Living Well' page is displayed.</p></td>
+                            <td>UNEXECUTED</td>
+                            <td></td>
+                            <td></td>
+                        </tr>
+                    
+                        <tr>
+                            <td>c293cdb8-551d-4cc5-9e94-e9bcb0cdddcd</td>
+                            <td>16</td>
+                            <td><p>Click the breadcrumb link to go back to the main page.</p></td>
+                            <td></td>
+                            <td><p>The main page is displayed.</p></td>
+                            <td>UNEXECUTED</td>
+                            <td></td>
+                            <td></td>
+                        </tr>
+                    
+                
+            
+                
+                    <tr>
+                        <td rowspan="6">09dc1ede-9e88-4305-9c37-4252dbaf8f87</td>
+                        <td rowspan="6">Helen Brennan Solo Project</td>
+                        <td rowspan="6"></td>
+                        <td rowspan="6">Q4H-117</td>
+                        <td rowspan="6">‘Near You’ events</td>
+                        <td rowspan="6">QLH4 Helen</td>
+                        <td rowspan="6"></td>
+                        <td rowspan="6">Unscheduled</td>
+                        <td rowspan="6">Medium</td>
+                        <td rowspan="6">Helen Brennan</td>
+                        <td rowspan="6">Tue Sep 03 14:25:59 PDT 2019</td>
+                        <td rowspan="6">PASS</td>
+                        <td rowspan="6"></td>
+                        <td rowspan="6">Tue Sep 03 14:25:14 PDT 2019</td>
+                        <td rowspan="6">Helen Brennan</td>
+                        <td rowspan="6"></td>
+                        <td rowspan="6"></td>
+                        <td rowspan="6"></td>
+                        <td rowspan="6"></td>
+                        
+                            <td>784b06d7-a5bd-46a5-8d78-7ad8135a34f1</td>
+                            <td>1</td>
+                            <td><p>Access the website</p></td>
+                            <td><p>https://www.nationalmssociety.org</p></td>
+                            <td><p>The website displays.</p></td>
+                            <td>UNEXECUTED</td>
+                            <td></td>
+                            <td></td>
+                        
+                    </tr>
+                    
+                        <tr>
+                            <td>cca87426-1c9d-487f-ba2c-d43ac2584871</td>
+                            <td>2</td>
+                            <td><p>Click the 'In Your Area' link at the top of the page.</p></td>
+                            <td></td>
+                            <td><p>The 'Near You' page is displayed.</p></td>
+                            <td>UNEXECUTED</td>
+                            <td></td>
+                            <td></td>
+                        </tr>
+                    
+                        <tr>
+                            <td>d57e5498-921b-48be-b348-8aa0c0bbb254</td>
+                            <td>3</td>
+                            <td><p>Enter in a zip code</p></td>
+                            <td><p>Zip code: 84010</p></td>
+                            <td></td>
+                            <td>UNEXECUTED</td>
+                            <td></td>
+                            <td></td>
+                        </tr>
+                    
+                        <tr>
+                            <td>1f32e313-9161-46ec-80f2-46f823509096</td>
+                            <td>4</td>
+                            <td><p>Click the 'Search by Zip Code button</p></td>
+                            <td></td>
+                            <td><p>Results page should indicate Utah</p></td>
+                            <td>UNEXECUTED</td>
+                            <td></td>
+                            <td></td>
+                        </tr>
+                    
+                        <tr>
+                            <td>d5cc9af1-57ee-4c25-83a7-333bf334f236</td>
+                            <td>5</td>
+                            <td><p>In the 'Try another search' field, enter a different zip code</p></td>
+                            <td><p>zip code 67846</p></td>
+                            <td></td>
+                            <td>UNEXECUTED</td>
+                            <td></td>
+                            <td></td>
+                        </tr>
+                    
+                        <tr>
+                            <td>58b35ccd-6552-4ce1-b90d-7c041c0ff212</td>
+                            <td>6</td>
+                            <td><p>Click the orange 'location' icon</p></td>
+                            <td></td>
+                            <td><p>Results page should indicate that Kansas residents should be included</p></td>
+                            <td>UNEXECUTED</td>
+                            <td></td>
+                            <td></td>
+                        </tr>
+                    
+                
+            
+                
+                    <tr>
+                        <td rowspan="17">6eb7eddd-3cbe-4fc2-bd1f-9149f0805c53</td>
+                        <td rowspan="17">Helen Brennan Solo Project</td>
+                        <td rowspan="17"></td>
+                        <td rowspan="17">Q4H-103</td>
+                        <td rowspan="17">Internal links - guest users - Treating MS</td>
+                        <td rowspan="17">QLH4 Helen</td>
+                        <td rowspan="17"></td>
+                        <td rowspan="17">Unscheduled</td>
+                        <td rowspan="17">Medium</td>
+                        <td rowspan="17">Helen Brennan</td>
+                        <td rowspan="17">Tue Sep 03 14:26:16 PDT 2019</td>
+                        <td rowspan="17">PASS</td>
+                        <td rowspan="17"></td>
+                        <td rowspan="17">Tue Sep 03 14:24:50 PDT 2019</td>
+                        <td rowspan="17">Helen Brennan</td>
+                        <td rowspan="17"></td>
+                        <td rowspan="17"></td>
+                        <td rowspan="17"></td>
+                        <td rowspan="17"></td>
+                        
+                            <td>468853d6-9103-4fde-be33-bd5e684ca1a5</td>
+                            <td>1</td>
+                            <td><p>Access the website</p></td>
+                            <td><p>https://www.nationalmssociety.org</p></td>
+                            <td><p>The website displays.</p></td>
+                            <td>UNEXECUTED</td>
+                            <td></td>
+                            <td></td>
+                        
+                    </tr>
+                    
+                        <tr>
+                            <td>44f31d98-e447-42ff-b2fc-ae8d7e851c82</td>
+                            <td>2</td>
+                            <td><p>Ensure that the link at the top says 'Sign In' and not 'Hello, Helen'</p></td>
+                            <td></td>
+                            <td></td>
+                            <td>UNEXECUTED</td>
+                            <td></td>
+                            <td></td>
+                        </tr>
+                    
+                        <tr>
+                            <td>4e347f7a-9154-4fb8-a187-77d60ae0bbf0</td>
+                            <td>3</td>
+                            <td><p>Click the 'Resources & Support' link in the menu bar.</p></td>
+                            <td></td>
+                            <td><p>The 'Resources & Support' page is displayed.</p></td>
+                            <td>UNEXECUTED</td>
+                            <td></td>
+                            <td></td>
+                        </tr>
+                    
+                        <tr>
+                            <td>85f0d079-4c7a-48da-9c6b-92eef49ce967</td>
+                            <td>4</td>
+                            <td><p>Click the 'Library & Education Programs' link</p></td>
+                            <td></td>
+                            <td><p>The 'Comprehensive Care' page is displayed.</p></td>
+                            <td>UNEXECUTED</td>
+                            <td></td>
+                            <td></td>
+                        </tr>
+                    
+                        <tr>
+                            <td>2a786c81-301b-435b-a8dd-b1475cd92030</td>
+                            <td>5</td>
+                            <td><p>Click the breadcrumb link to go back to the 'Resources & Support' page.</p></td>
+                            <td></td>
+                            <td><p>The 'Resources & Support' page is displayed.</p></td>
+                            <td>UNEXECUTED</td>
+                            <td></td>
+                            <td></td>
+                        </tr>
+                    
+                        <tr>
+                            <td>d7003a6d-8fc2-402e-95e3-55493762d574</td>
+                            <td>6</td>
+                            <td><p>Click the 'Find Support' link</p></td>
+                            <td></td>
+                            <td><p>The 'Find Support' page is displayed</p></td>
+                            <td>UNEXECUTED</td>
+                            <td></td>
+                            <td></td>
+                        </tr>
+                    
+                        <tr>
+                            <td>0e5090d1-ddb0-4348-95d4-b9ba469b48b1</td>
+                            <td>7</td>
+                            <td><p>Click the breadcrumb link to go back to the 'Resources & Support' page.</p></td>
+                            <td></td>
+                            <td><p>The 'Resources & Support' page is displayed.</p></td>
+                            <td>UNEXECUTED</td>
+                            <td></td>
+                            <td></td>
+                        </tr>
+                    
+                        <tr>
+                            <td>57cc9fa8-4565-420a-94cf-22f3e0b57bf4</td>
+                            <td>8</td>
+                            <td><p>Click the 'Advanced Care Needs' link</p></td>
+                            <td></td>
+                            <td><p>The 'Managing Relapses' page is displayed</p></td>
+                            <td>UNEXECUTED</td>
+                            <td></td>
+                            <td></td>
+                        </tr>
+                    
+                        <tr>
+                            <td>fa1d24c1-71f5-487f-8dc3-5fe8f8767b33</td>
+                            <td>9</td>
+                            <td><p>Click the breadcrumb link to go back to the 'Resources & Support' page.</p></td>
+                            <td></td>
+                            <td><p>The 'Resources & Support' page is displayed.</p></td>
+                            <td>UNEXECUTED</td>
+                            <td></td>
+                            <td></td>
+                        </tr>
+                    
+                        <tr>
+                            <td>414c65fc-8f2a-40df-a7ab-049d7ddb6515</td>
+                            <td>10</td>
+                            <td><p>Click the 'Resources for Specific Populations' link</p></td>
+                            <td></td>
+                            <td><p>The 'Rehabilitation' page is displayed.</p></td>
+                            <td>UNEXECUTED</td>
+                            <td></td>
+                            <td></td>
+                        </tr>
+                    
+                        <tr>
+                            <td>2c9e4a74-ed9e-44eb-8f87-f74dd611d479</td>
+                            <td>11</td>
+                            <td><p>Click the breadcrumb link to go back to the 'Resources & Support' page.</p></td>
+                            <td></td>
+                            <td><p>The 'Resources & Support' page is displayed.</p></td>
+                            <td>UNEXECUTED</td>
+                            <td></td>
+                            <td></td>
+                        </tr>
+                    
+                        <tr>
+                            <td>ec7be5a6-7103-443b-b5ca-8d0d2d4cf925</td>
+                            <td>12</td>
+                            <td><p>Click the 'Find Programs & Services in Your Area' link</p></td>
+                            <td></td>
+                            <td><p>The 'Near You' page is displayed.</p></td>
+                            <td>UNEXECUTED</td>
+                            <td></td>
+                            <td></td>
+                        </tr>
+                    
+                        <tr>
+                            <td>813d4ad6-7dcf-4d35-8d78-d4a7e902254f</td>
+                            <td>13</td>
+                            <td><p>Click the 'Resources & Support' link in the menu bar.</p></td>
+                            <td></td>
+                            <td><p>The 'Resources & Support' page is displayed.</p></td>
+                            <td>UNEXECUTED</td>
+                            <td></td>
+                            <td></td>
+                        </tr>
+                    
+                        <tr>
+                            <td>4c356de0-ba7d-44a2-9bcf-f5ab35099813</td>
+                            <td>14</td>
+                            <td><p>Click the 'Calendar of Programs and Events' link.</p></td>
+                            <td></td>
+                            <td><p>The 'For Clinicians' page is displayed.</p></td>
+                            <td>UNEXECUTED</td>
+                            <td></td>
+                            <td></td>
+                        </tr>
+                    
+                        <tr>
+                            <td>9337da5e-c75a-4eaa-b20f-dfdea96d2b1d</td>
+                            <td>15</td>
+                            <td><p>Click the breadcrumb link to go back to the 'Resources & Support' page.</p></td>
+                            <td></td>
+                            <td><p>The 'Resources & Support' page is displayed.</p></td>
+                            <td>UNEXECUTED</td>
+                            <td></td>
+                            <td></td>
+                        </tr>
+                    
+                        <tr>
+                            <td>7cfd685c-9b1a-4f43-88fd-5f06192566ca</td>
+                            <td>16</td>
+                            <td><p>Click the 'Find Doctors & Resources' link.</p></td>
+                            <td></td>
+                            <td><p>The 'Find Doctors & Resources' page is displayed.</p></td>
+                            <td>UNEXECUTED</td>
+                            <td></td>
+                            <td></td>
+                        </tr>
+                    
+                        <tr>
+                            <td>25baf91b-7f1b-4b17-9726-dd285cb7122e</td>
+                            <td>17</td>
+                            <td><p>Click the breadcrumb link to go back to the main page.</p></td>
+                            <td></td>
+                            <td><p>The main page is displayed.</p></td>
+                            <td>UNEXECUTED</td>
+                            <td></td>
+                            <td></td>
+                        </tr>
+                    
+                
+            
+                
+                    <tr>
+                        <td rowspan="11">72ade3f5-ad77-4871-93ee-90a9af8fdb58</td>
+                        <td rowspan="11">Helen Brennan Solo Project</td>
+                        <td rowspan="11"></td>
+                        <td rowspan="11">Q4H-106</td>
+                        <td rowspan="11">Internal links - guest users - Research</td>
+                        <td rowspan="11">QLH4 Helen</td>
+                        <td rowspan="11"></td>
+                        <td rowspan="11">Unscheduled</td>
+                        <td rowspan="11">Medium</td>
+                        <td rowspan="11">Helen Brennan</td>
+                        <td rowspan="11">Tue Sep 03 14:26:19 PDT 2019</td>
+                        <td rowspan="11">PASS</td>
+                        <td rowspan="11"></td>
+                        <td rowspan="11">Tue Sep 03 14:24:53 PDT 2019</td>
+                        <td rowspan="11">Helen Brennan</td>
+                        <td rowspan="11"></td>
+                        <td rowspan="11"></td>
+                        <td rowspan="11"></td>
+                        <td rowspan="11"></td>
+                        
+                            <td>5a17a932-d241-4f8e-b3ea-e58b5b7b36a5</td>
+                            <td>1</td>
+                            <td><p>Access the website</p></td>
+                            <td><p>https://www.nationalmssociety.org</p></td>
+                            <td><p>The website displays.</p></td>
+                            <td>UNEXECUTED</td>
+                            <td></td>
+                            <td></td>
+                        
+                    </tr>
+                    
+                        <tr>
+                            <td>41b08ea3-45cd-4f1c-a87b-19afce86d780</td>
+                            <td>2</td>
+                            <td><p>Ensure that the link at the top says 'Sign In' and not 'Hello, Helen'</p></td>
+                            <td></td>
+                            <td></td>
+                            <td>UNEXECUTED</td>
+                            <td></td>
+                            <td></td>
+                        </tr>
+                    
+                        <tr>
+                            <td>e67009dc-bfa8-4dba-8d2f-f308fe12ba3d</td>
+                            <td>3</td>
+                            <td><p>Click the 'Research' link in the menu bar.</p></td>
+                            <td></td>
+                            <td><p>The 'Research page is displayed.</p></td>
+                            <td>UNEXECUTED</td>
+                            <td></td>
+                            <td></td>
+                        </tr>
+                    
+                        <tr>
+                            <td>926674cc-6761-44ab-809f-3213a2c188f4</td>
+                            <td>4</td>
+                            <td><p>Click the 'Learn More' button in the box labeled 'STOP</br>Disease Progression'</p></td>
+                            <td></td>
+                            <td><p>The 'Stopping MS In Its Tracks' page is displayed.</p></td>
+                            <td>UNEXECUTED</td>
+                            <td></td>
+                            <td></td>
+                        </tr>
+                    
+                        <tr>
+                            <td>6b19c2ef-09a8-44db-8edb-6c579b49e4cc</td>
+                            <td>5</td>
+                            <td><p>Click the breadcrumb link to go back to the 'Research' page.</p></td>
+                            <td></td>
+                            <td><p>The 'Research page is displayed.</p></td>
+                            <td>UNEXECUTED</td>
+                            <td></td>
+                            <td></td>
+                        </tr>
+                    
+                        <tr>
+                            <td>a55924af-a596-416e-8583-2ab4894b4b05</td>
+                            <td>6</td>
+                            <td><p>Click the 'Learn More' button in the box labeled 'STOP</br>Disease Progression'</p></td>
+                            <td></td>
+                            <td><p>The 'Restoring What's Been Lost' page is displayed.</p></td>
+                            <td>UNEXECUTED</td>
+                            <td></td>
+                            <td></td>
+                        </tr>
+                    
+                        <tr>
+                            <td>65cc1ef2-07d7-4629-9fcf-5ef6efa3216e</td>
+                            <td>7</td>
+                            <td><p>Click the breadcrumb link to go back to the 'Research' page.</p></td>
+                            <td></td>
+                            <td><p>The 'Research page is displayed.</p></td>
+                            <td>UNEXECUTED</td>
+                            <td></td>
+                            <td></td>
+                        </tr>
+                    
+                        <tr>
+                            <td>0be7db74-4ca0-4164-a005-1dd830faefe8</td>
+                            <td>8</td>
+                            <td><p>Click the 'Learn More' button in the box labeled 'END</br>MS Forever'</p></td>
+                            <td></td>
+                            <td><p>The 'Ending the Disease Forever' page is displayed</p></td>
+                            <td>UNEXECUTED</td>
+                            <td></td>
+                            <td></td>
+                        </tr>
+                    
+                        <tr>
+                            <td>a42a03fe-a0ae-462f-81c6-53da13c59f18</td>
+                            <td>9</td>
+                            <td><p>Click the breadcrumb link to go back to the 'Research' page.</p></td>
+                            <td></td>
+                            <td><p>The 'Research page is displayed.</p></td>
+                            <td>UNEXECUTED</td>
+                            <td></td>
+                            <td></td>
+                        </tr>
+                    
+                        <tr>
+                            <td>34ed2511-8cf9-49a3-8f72-79510b8c0f05</td>
+                            <td>10</td>
+                            <td><p>Click the 'More About How We Fund Research' link</p></td>
+                            <td></td>
+                            <td><p>The 'Research We Fund' page is displayed</p></td>
+                            <td>UNEXECUTED</td>
+                            <td></td>
+                            <td></td>
+                        </tr>
+                    
+                        <tr>
+                            <td>67d2bf02-a7b7-4190-9419-b0ac2fcef85b</td>
+                            <td>11</td>
+                            <td><p>Click the breadcrumb link to go back to the main page.</p></td>
+                            <td></td>
+                            <td><p>The main page is displayed.</p></td>
+                            <td>UNEXECUTED</td>
+                            <td></td>
+                            <td></td>
+                        </tr>
+                    
+                
+            
+                
+                    <tr>
+                        <td rowspan="6">7649ba34-779a-4237-9b89-fee27c9079d0</td>
+                        <td rowspan="6">Helen Brennan Solo Project</td>
+                        <td rowspan="6"></td>
+                        <td rowspan="6">Q4H-118</td>
+                        <td rowspan="6">Donation link should return error when invalid information entered</td>
+                        <td rowspan="6">QLH4 Helen</td>
+                        <td rowspan="6"></td>
+                        <td rowspan="6">Unscheduled</td>
+                        <td rowspan="6">Medium</td>
+                        <td rowspan="6">Helen Brennan</td>
+                        <td rowspan="6">Tue Sep 03 14:26:23 PDT 2019</td>
+                        <td rowspan="6">PASS</td>
+                        <td rowspan="6"></td>
+                        <td rowspan="6">Tue Sep 03 14:25:15 PDT 2019</td>
+                        <td rowspan="6">Helen Brennan</td>
+                        <td rowspan="6"></td>
+                        <td rowspan="6"></td>
+                        <td rowspan="6"></td>
+                        <td rowspan="6"></td>
+                        
+                            <td>5a723d55-a4c8-424d-9ec9-82c1bde1eafc</td>
+                            <td>1</td>
+                            <td><p>Access the website.</p></td>
+                            <td><p>https://www.nationalmssociety.org</p></td>
+                            <td><p>The main page is displayed.</p></td>
+                            <td>UNEXECUTED</td>
+                            <td></td>
+                            <td></td>
+                        
+                    </tr>
+                    
+                        <tr>
+                            <td>89c01017-a764-4439-b8bd-a3e8d16a75e2</td>
+                            <td>2</td>
+                            <td><p>Click the 'Donate' button along the page header.</p></td>
+                            <td></td>
+                            <td><p>The 'Donate' page is displayed.</p></td>
+                            <td>UNEXECUTED</td>
+                            <td></td>
+                            <td></td>
+                        </tr>
+                    
+                        <tr>
+                            <td>30fe4061-cc02-43b5-ab07-9b30c42637a6</td>
+                            <td>3</td>
+                            <td><p>Click the 'Donate Now' button in the box labeled 'Donate Online'</p></td>
+                            <td></td>
+                            <td><p>The MS Society Donation Form is displayed.</p></td>
+                            <td>UNEXECUTED</td>
+                            <td></td>
+                            <td></td>
+                        </tr>
+                    
+                        <tr>
+                            <td>b1a22221-5d91-4c9e-84c4-b09c6e06ed13</td>
+                            <td>4</td>
+                            <td><p>Select the appropriate radio button for the 'Select Gift Amount'.</p></td>
+                            <td><p>$30</p></td>
+                            <td></td>
+                            <td>UNEXECUTED</td>
+                            <td></td>
+                            <td></td>
+                        </tr>
+                    
+                        <tr>
+                            <td>0b0efa97-44e4-48d9-bed1-b3ac5bfeee87</td>
+                            <td>5</td>
+                            <td><p>Enter the requested/required information in the form</p></td>
+                            <td><p>First Name: Helen</br>Last Name: Brennan</br>Street 1: 123 Any St</br>City: Salt Lake City</br>State: Utah</br>Zip: 84104</br>Email Address: helenbrennan78@gmail.com</br>Uncheck the email updates request</br>Connection to MS: Other</br>CC Number: 4415 2222 3333 4444</br>Exp date: 10/2021</br>CVV: 123</p></td>
+                            <td></td>
+                            <td>UNEXECUTED</td>
+                            <td></td>
+                            <td></td>
+                        </tr>
+                    
+                        <tr>
+                            <td>6508c893-fe49-4374-aa30-de56b2d5c280</td>
+                            <td>6</td>
+                            <td><p>Click 'Complete Donation' button.</p></td>
+                            <td></td>
+                            <td><p>An error is displayed at the top of the page stating "There was a problem processing your request."</p></td>
+                            <td>UNEXECUTED</td>
+                            <td></td>
+                            <td></td>
+                        </tr>
+                    
+                
+            
+                
+                    <tr>
+                        <td rowspan="11">7df0327e-f619-4e1b-9c8f-1a5a76073963</td>
+                        <td rowspan="11">Helen Brennan Solo Project</td>
+                        <td rowspan="11"></td>
+                        <td rowspan="11">Q4H-113</td>
+                        <td rowspan="11">Internal links - registered users - Research</td>
+                        <td rowspan="11">QLH4 Helen</td>
+                        <td rowspan="11"></td>
+                        <td rowspan="11">Unscheduled</td>
+                        <td rowspan="11">Medium</td>
+                        <td rowspan="11">Helen Brennan</td>
+                        <td rowspan="11">Tue Sep 03 14:26:25 PDT 2019</td>
+                        <td rowspan="11">PASS</td>
+                        <td rowspan="11"></td>
+                        <td rowspan="11">Tue Sep 03 14:24:59 PDT 2019</td>
+                        <td rowspan="11">Helen Brennan</td>
+                        <td rowspan="11"></td>
+                        <td rowspan="11"></td>
+                        <td rowspan="11"></td>
+                        <td rowspan="11"></td>
+                        
+                            <td>63538eb6-92f6-4cb7-af23-6bc2b43e7a07</td>
+                            <td>1</td>
+                            <td><p>Access the website</p></td>
+                            <td><p>https://www.nationalmssociety.org</p></td>
+                            <td><p>The website displays.</p></td>
+                            <td>UNEXECUTED</td>
+                            <td></td>
+                            <td></td>
+                        
+                    </tr>
+                    
+                        <tr>
+                            <td>8bfec607-0645-432b-be35-6af74b9e0ff8</td>
+                            <td>2</td>
+                            <td><p>Ensure that the link at the top says 'Hello, Helen' and not 'Sign In'.</p></td>
+                            <td></td>
+                            <td></td>
+                            <td>UNEXECUTED</td>
+                            <td></td>
+                            <td></td>
+                        </tr>
+                    
+                        <tr>
+                            <td>81bd16ed-6504-4511-9c58-d3bd5afb5061</td>
+                            <td>3</td>
+                            <td><p>Click the 'Research' link in the menu bar.</p></td>
+                            <td></td>
+                            <td><p>The 'Research page is displayed.</p></td>
+                            <td>UNEXECUTED</td>
+                            <td></td>
+                            <td></td>
+                        </tr>
+                    
+                        <tr>
+                            <td>224bd0eb-4c14-4571-8045-e243b5f3f2eb</td>
+                            <td>4</td>
+                            <td><p>Click the 'Learn More' button in the box labeled 'STOP</br>Disease Progression'</p></td>
+                            <td></td>
+                            <td><p>The 'Stopping MS In Its Tracks' page is displayed.</p></td>
+                            <td>UNEXECUTED</td>
+                            <td></td>
+                            <td></td>
+                        </tr>
+                    
+                        <tr>
+                            <td>224b17fd-492c-4e5b-b15e-fb79cc9954aa</td>
+                            <td>5</td>
+                            <td><p>Click the breadcrumb link to go back to the 'Research' page.</p></td>
+                            <td></td>
+                            <td><p>The 'Research page is displayed.</p></td>
+                            <td>UNEXECUTED</td>
+                            <td></td>
+                            <td></td>
+                        </tr>
+                    
+                        <tr>
+                            <td>a0466c12-c27d-4dc2-adb3-7d45cf2e365b</td>
+                            <td>6</td>
+                            <td><p>Click the 'Learn More' button in the box labeled 'STOP</br>Disease Progression'</p></td>
+                            <td></td>
+                            <td><p>The 'Restoring What's Been Lost' page is displayed.</p></td>
+                            <td>UNEXECUTED</td>
+                            <td></td>
+                            <td></td>
+                        </tr>
+                    
+                        <tr>
+                            <td>739186a7-a1d0-4eb9-a774-2f8bc3290433</td>
+                            <td>7</td>
+                            <td><p>Click the breadcrumb link to go back to the 'Research' page.</p></td>
+                            <td></td>
+                            <td><p>The 'Research page is displayed.</p></td>
+                            <td>UNEXECUTED</td>
+                            <td></td>
+                            <td></td>
+                        </tr>
+                    
+                        <tr>
+                            <td>26f8a63c-e001-4b12-9e2f-a7db0601723c</td>
+                            <td>8</td>
+                            <td><p>Click the 'Learn More' button in the box labeled 'END</br>MS Forever'</p></td>
+                            <td></td>
+                            <td><p>The 'Ending the Disease Forever' page is displayed</p></td>
+                            <td>UNEXECUTED</td>
+                            <td></td>
+                            <td></td>
+                        </tr>
+                    
+                        <tr>
+                            <td>41477276-ce72-4b1b-96bc-8ecdc060678c</td>
+                            <td>9</td>
+                            <td><p>Click the breadcrumb link to go back to the 'Research' page.</p></td>
+                            <td></td>
+                            <td><p>The 'Research page is displayed.</p></td>
+                            <td>UNEXECUTED</td>
+                            <td></td>
+                            <td></td>
+                        </tr>
+                    
+                        <tr>
+                            <td>7572e2b4-a5cc-460b-b4b6-be61c8df7d4b</td>
+                            <td>10</td>
+                            <td><p>Click the 'More About How We Fund Research' link</p></td>
+                            <td></td>
+                            <td><p>The 'Research We Fund' page is displayed</p></td>
+                            <td>UNEXECUTED</td>
+                            <td></td>
+                            <td></td>
+                        </tr>
+                    
+                        <tr>
+                            <td>813d0674-e99d-4515-aa43-b468f3f202f7</td>
+                            <td>11</td>
+                            <td><p>Click the breadcrumb link to go back to the main page.</p></td>
+                            <td></td>
+                            <td><p>The main page is displayed.</p></td>
+                            <td>UNEXECUTED</td>
+                            <td></td>
+                            <td></td>
+                        </tr>
+                    
+                
+            
+                
+                    <tr>
+                        <td rowspan="3">82752d7a-caf6-4295-99e9-f2ad2b53e904</td>
+                        <td rowspan="3">Helen Brennan Solo Project</td>
+                        <td rowspan="3"></td>
+                        <td rowspan="3">Q4H-100</td>
+                        <td rowspan="3">Existing user log in</td>
+                        <td rowspan="3">QLH4 Helen</td>
+                        <td rowspan="3"></td>
+                        <td rowspan="3">Unscheduled</td>
+                        <td rowspan="3">Medium</td>
+                        <td rowspan="3">Helen Brennan</td>
+                        <td rowspan="3">Tue Sep 03 14:26:27 PDT 2019</td>
+                        <td rowspan="3">PASS</td>
+                        <td rowspan="3"></td>
+                        <td rowspan="3">Tue Sep 03 14:24:47 PDT 2019</td>
+                        <td rowspan="3">Helen Brennan</td>
+                        <td rowspan="3"></td>
+                        <td rowspan="3"></td>
+                        <td rowspan="3"></td>
+                        <td rowspan="3"></td>
+                        
+                            <td>f250a14b-2eab-437b-8c80-95a72c467782</td>
+                            <td>1</td>
+                            <td><p>Access the website.</p></td>
+                            <td><p>https://www.nationalmssociety.org</p></td>
+                            <td><p>The website is displayed.</p></td>
+                            <td>UNEXECUTED</td>
+                            <td></td>
+                            <td></td>
+                        
+                    </tr>
+                    
+                        <tr>
+                            <td>fb73e828-bbbc-4e29-85d0-0dc67b051144</td>
+                            <td>2</td>
+                            <td><p>Click the 'Sign in' link at the top of the page.</p></td>
+                            <td></td>
+                            <td><p>The 'Sign in' page is displayed.</p></td>
+                            <td>UNEXECUTED</td>
+                            <td></td>
+                            <td></td>
+                        </tr>
+                    
+                        <tr>
+                            <td>d95fc36d-2d60-4804-980c-541d1135ad0c</td>
+                            <td>3</td>
+                            <td><p>In the 'Returning? Sign in' section, enter existing user information.</p></td>
+                            <td><p>Username: HB_78</br>Password: some_pa55word</p></td>
+                            <td></td>
+                            <td>UNEXECUTED</td>
+                            <td></td>
+                            <td></td>
+                        </tr>
+                    
+                
+            
+                
+                    <tr>
+                        <td rowspan="21">9bf13b98-1f0e-4f7d-982d-1d9ed41b84ad</td>
+                        <td rowspan="21">Helen Brennan Solo Project</td>
+                        <td rowspan="21"></td>
+                        <td rowspan="21">Q4H-102</td>
+                        <td rowspan="21">Internal links - guest users - Symptoms &amp; Diagnosis</td>
+                        <td rowspan="21">QLH4 Helen</td>
+                        <td rowspan="21"></td>
+                        <td rowspan="21">Unscheduled</td>
+                        <td rowspan="21">Medium</td>
+                        <td rowspan="21">Helen Brennan</td>
+                        <td rowspan="21">Tue Sep 03 14:26:30 PDT 2019</td>
+                        <td rowspan="21">PASS</td>
+                        <td rowspan="21"></td>
+                        <td rowspan="21">Tue Sep 03 14:24:49 PDT 2019</td>
+                        <td rowspan="21">Helen Brennan</td>
+                        <td rowspan="21"></td>
+                        <td rowspan="21"></td>
+                        <td rowspan="21"></td>
+                        <td rowspan="21"></td>
+                        
+                            <td>87e56db5-17e6-4da2-ba1d-d8d9fd4e8bce</td>
+                            <td>1</td>
+                            <td><p>Access the website</p></td>
+                            <td><p>https://www.nationalmssociety.org</p></td>
+                            <td><p>The website displays.</p></td>
+                            <td>UNEXECUTED</td>
+                            <td></td>
+                            <td></td>
+                        
+                    </tr>
+                    
+                        <tr>
+                            <td>e1ee019c-0b8c-4bc9-ad05-4e5172edc35f</td>
+                            <td>2</td>
+                            <td><p>Ensure that the link at the top says 'Sign In' and not 'Hello, Helen'</p></td>
+                            <td></td>
+                            <td></td>
+                            <td>UNEXECUTED</td>
+                            <td></td>
+                            <td></td>
+                        </tr>
+                    
+                        <tr>
+                            <td>b569bdd2-1408-4661-804f-e06ea55d0bcb</td>
+                            <td>3</td>
+                            <td><p>Click the 'Symptoms & Diagnosis' link in the menu bar.</p></td>
+                            <td></td>
+                            <td><p>The 'Symptoms & Diagnosis' page is displayed.</p></td>
+                            <td>UNEXECUTED</td>
+                            <td></td>
+                            <td></td>
+                        </tr>
+                    
+                        <tr>
+                            <td>5402b60d-d8dc-41ca-8d11-9a5e3ae315a5</td>
+                            <td>4</td>
+                            <td><p>Click the 'MS Symptoms' link</p></td>
+                            <td></td>
+                            <td><p>The 'MS Symptoms' page is displayed.</p></td>
+                            <td>UNEXECUTED</td>
+                            <td></td>
+                            <td></td>
+                        </tr>
+                    
+                        <tr>
+                            <td>b408a71c-aaba-4aec-8f74-55b310418355</td>
+                            <td>5</td>
+                            <td><p>Click the breadcrumb link to go back to the 'The 'Symptoms & Diagnosis' page.</p></td>
+                            <td></td>
+                            <td><p>The 'Symptoms & Diagnosis' page is displayed.</p></td>
+                            <td>UNEXECUTED</td>
+                            <td></td>
+                            <td></td>
+                        </tr>
+                    
+                        <tr>
+                            <td>340eb499-440d-45f5-9c3e-f9f56c795730</td>
+                            <td>6</td>
+                            <td><p>Click the 'Diagnosing MS' link.</p></td>
+                            <td></td>
+                            <td><p>The 'Diagnosing MS' page is displayed.</p></td>
+                            <td>UNEXECUTED</td>
+                            <td></td>
+                            <td></td>
+                        </tr>
+                    
+                        <tr>
+                            <td>39d0f348-2e2f-471d-9196-969662e93e48</td>
+                            <td>7</td>
+                            <td><p>Click the breadcrumb link to go back to the 'Symptoms & Diagnosis' page.</p></td>
+                            <td></td>
+                            <td><p>The 'Symptoms & Diagnosis' page is displayed.</p></td>
+                            <td>UNEXECUTED</td>
+                            <td></td>
+                            <td></td>
+                        </tr>
+                    
+                        <tr>
+                            <td>bbc686cf-6966-4951-bcbd-09377a3e2c80</td>
+                            <td>8</td>
+                            <td><p>Click the 'Magnetic Resonance Imaging (MRI)' link</p></td>
+                            <td></td>
+                            <td><p>The 'Magnetic Resonance Imaging (MRI)' page is displayed</p></td>
+                            <td>UNEXECUTED</td>
+                            <td></td>
+                            <td></td>
+                        </tr>
+                    
+                        <tr>
+                            <td>7abb20a4-f096-44ee-a024-46487cd2f212</td>
+                            <td>9</td>
+                            <td><p>Click the breadcrumb link to go back to the 'What Is MS?' page.</p></td>
+                            <td></td>
+                            <td><p>The 'Symptoms & Diagnosis' page is displayed.</p></td>
+                            <td>UNEXECUTED</td>
+                            <td></td>
+                            <td></td>
+                        </tr>
+                    
+                        <tr>
+                            <td>4d1a2faa-863b-42ac-959b-540719ce9d7c</td>
+                            <td>10</td>
+                            <td><p>Click the 'Cerebrospinal Fluid (CSF)' link</p></td>
+                            <td></td>
+                            <td><p>The 'Multiple Sclerosis FAQs' page is displayed</p></td>
+                            <td>UNEXECUTED</td>
+                            <td></td>
+                            <td></td>
+                        </tr>
+                    
+                        <tr>
+                            <td>2d0e6150-8c30-4608-a263-30f067eb0bed</td>
+                            <td>11</td>
+                            <td><p>Click the breadcrumb link to go back to the 'The 'Symptoms & Diagnosis' page.</p></td>
+                            <td></td>
+                            <td><p>The 'What Is MS?' page is displayed.</p></td>
+                            <td>UNEXECUTED</td>
+                            <td></td>
+                            <td></td>
+                        </tr>
+                    
+                        <tr>
+                            <td>fbabb876-de66-4cf7-874f-56b3ba104e3e</td>
+                            <td>12</td>
+                            <td><p>Click the 'Possible MS' link</p></td>
+                            <td></td>
+                            <td><p>The 'Possible MS' page is displayed.</p></td>
+                            <td>UNEXECUTED</td>
+                            <td></td>
+                            <td></td>
+                        </tr>
+                    
+                        <tr>
+                            <td>6a0ae0e8-b9f2-4658-b958-b08bf089e094</td>
+                            <td>13</td>
+                            <td><p>Click the breadcrumb link to go back to the 'The 'Symptoms & Diagnosis' page.</p></td>
+                            <td></td>
+                            <td><p>The 'Symptoms & Diagnosis' page is displayed.</p></td>
+                            <td>UNEXECUTED</td>
+                            <td></td>
+                            <td></td>
+                        </tr>
+                    
+                        <tr>
+                            <td>a7140c77-daf2-4bdc-947c-4a2dbf1069c8</td>
+                            <td>14</td>
+                            <td><p>Click the 'Clinically Isolated Syndrome (CIS)' link</p></td>
+                            <td></td>
+                            <td><p>The 'Clinically Isolated Syndrome (CIS)' page is displayed.</p></td>
+                            <td>UNEXECUTED</td>
+                            <td></td>
+                            <td></td>
+                        </tr>
+                    
+                        <tr>
+                            <td>4e5902dd-1e79-4503-a0df-0ce5328dea3c</td>
+                            <td>15</td>
+                            <td><p>Click the breadcrumb link to go back to the 'The 'Symptoms & Diagnosis' page.</p></td>
+                            <td></td>
+                            <td><p>The 'Symptoms & Diagnosis' page is displayed.</p></td>
+                            <td>UNEXECUTED</td>
+                            <td></td>
+                            <td></td>
+                        </tr>
+                    
+                        <tr>
+                            <td>24019425-b8e4-4447-8b88-59ca48d615b4</td>
+                            <td>16</td>
+                            <td><p>Click the 'Newly Diagnosed' link.</p></td>
+                            <td></td>
+                            <td><p>The 'Newly Diagnosed' page is displayed.</p></td>
+                            <td>UNEXECUTED</td>
+                            <td></td>
+                            <td></td>
+                        </tr>
+                    
+                        <tr>
+                            <td>e9ed5736-9cbc-49a3-834b-6c5307d8b6c5</td>
+                            <td>17</td>
+                            <td><p>Click the breadcrumb link to go back to the 'The 'Symptoms & Diagnosis' page.</p></td>
+                            <td></td>
+                            <td><p>The 'Symptoms & Diagnosis' page is displayed.</p></td>
+                            <td>UNEXECUTED</td>
+                            <td></td>
+                            <td></td>
+                        </tr>
+                    
+                        <tr>
+                            <td>2bf40021-3439-4ba2-be5a-15e0b9909f1f</td>
+                            <td>18</td>
+                            <td><p>Click the 'Other Conditions to Rule Out' link.</p></td>
+                            <td></td>
+                            <td><p>The 'Other Conditions to Rule Out' page is displayed.</p></td>
+                            <td>UNEXECUTED</td>
+                            <td></td>
+                            <td></td>
+                        </tr>
+                    
+                        <tr>
+                            <td>19307175-7544-4ffb-9b3a-a2029e7774be</td>
+                            <td>19</td>
+                            <td><p>Click the breadcrumb link to go back to the 'The 'Symptoms & Diagnosis' page.</p></td>
+                            <td></td>
+                            <td><p>The 'Symptoms & Diagnosis' page is displayed.</p></td>
+                            <td>UNEXECUTED</td>
+                            <td></td>
+                            <td></td>
+                        </tr>
+                    
+                        <tr>
+                            <td>800950dd-54cf-48b8-a974-122dc0cd9815</td>
+                            <td>20</td>
+                            <td><p>Click the 'For Clinicians' link.</p></td>
+                            <td></td>
+                            <td><p>The 'For Clinicians' page is displayed.</p></td>
+                            <td>UNEXECUTED</td>
+                            <td></td>
+                            <td></td>
+                        </tr>
+                    
+                        <tr>
+                            <td>92892f90-cc5a-4928-a91e-7a1d9c48ede7</td>
+                            <td>21</td>
+                            <td><p>Click the breadcrumb link to go back to the main page.</p></td>
+                            <td></td>
+                            <td><p>The main page is displayed.</p></td>
+                            <td>UNEXECUTED</td>
+                            <td></td>
+                            <td></td>
+                        </tr>
+                    
+                
+            
+                
+                    <tr>
+                        <td rowspan="16">b2158907-cdef-465b-9fd0-0468baf51365</td>
+                        <td rowspan="16">Helen Brennan Solo Project</td>
+                        <td rowspan="16"></td>
+                        <td rowspan="16">Q4H-101</td>
+                        <td rowspan="16">Internal links - guest users - What is MS?</td>
+                        <td rowspan="16">QLH4 Helen</td>
+                        <td rowspan="16"></td>
+                        <td rowspan="16">Unscheduled</td>
+                        <td rowspan="16">Medium</td>
+                        <td rowspan="16">Helen Brennan</td>
+                        <td rowspan="16">Tue Sep 03 14:26:33 PDT 2019</td>
+                        <td rowspan="16">PASS</td>
+                        <td rowspan="16"></td>
+                        <td rowspan="16">Tue Sep 03 14:24:48 PDT 2019</td>
+                        <td rowspan="16">Helen Brennan</td>
+                        <td rowspan="16"></td>
+                        <td rowspan="16"></td>
+                        <td rowspan="16"></td>
+                        <td rowspan="16"></td>
+                        
+                            <td>a1f7cfb3-ec00-4c48-9e99-606693025d38</td>
+                            <td>1</td>
+                            <td><p>Access the website</p></td>
+                            <td><p>https://www.nationalmssociety.org</p></td>
+                            <td><p>The website displays.</p></td>
+                            <td>UNEXECUTED</td>
+                            <td></td>
+                            <td></td>
+                        
+                    </tr>
+                    
+                        <tr>
+                            <td>7aaea1d7-babe-406d-b1ed-f7302540eb18</td>
+                            <td>2</td>
+                            <td><p>Ensure that the link at the top says 'Sign In' and not 'Hello, Helen'</p></td>
+                            <td></td>
+                            <td></td>
+                            <td>UNEXECUTED</td>
+                            <td></td>
+                            <td></td>
+                        </tr>
+                    
+                        <tr>
+                            <td>cc0d29ee-ca80-4025-972e-e7ead123420e</td>
+                            <td>3</td>
+                            <td><p>Click the 'What Is MS?' link in the menu bar.</p></td>
+                            <td></td>
+                            <td><p>The 'What Is MS?' page is displayed.</p></td>
+                            <td>UNEXECUTED</td>
+                            <td></td>
+                            <td></td>
+                        </tr>
+                    
+                        <tr>
+                            <td>7f85a149-0a88-4510-884d-c6934e6367e1</td>
+                            <td>4</td>
+                            <td><p>Click the 'Definition of MS' link</p></td>
+                            <td></td>
+                            <td><p>The 'Definition of MS' page is displayed.</p></td>
+                            <td>UNEXECUTED</td>
+                            <td></td>
+                            <td></td>
+                        </tr>
+                    
+                        <tr>
+                            <td>4258679d-cae1-49c8-a258-119ce3721e32</td>
+                            <td>5</td>
+                            <td><p>Click the breadcrumb link to go back to the 'What Is MS?' page.</p></td>
+                            <td></td>
+                            <td><p>The 'What Is MS?' page is displayed.</p></td>
+                            <td>UNEXECUTED</td>
+                            <td></td>
+                            <td></td>
+                        </tr>
+                    
+                        <tr>
+                            <td>ca363de0-24f5-4e48-91e8-de1469ed020e</td>
+                            <td>6</td>
+                            <td><p>Click the 'What Causes MS?' link.</p></td>
+                            <td></td>
+                            <td><p>The 'What Causes MS?' page is displayed.</p></td>
+                            <td>UNEXECUTED</td>
+                            <td></td>
+                            <td></td>
+                        </tr>
+                    
+                        <tr>
+                            <td>340b3e99-e70e-49a2-83fa-48f1e54390a3</td>
+                            <td>7</td>
+                            <td><p>Click the breadcrumb link to go back to the 'What Is MS?' page.</p></td>
+                            <td></td>
+                            <td><p>The 'What Is MS?' page is displayed.</p></td>
+                            <td>UNEXECUTED</td>
+                            <td></td>
+                            <td></td>
+                        </tr>
+                    
+                        <tr>
+                            <td>0057661b-c5d6-45f2-b717-cc74139e8b63</td>
+                            <td>8</td>
+                            <td><p>Click the 'Who Gets MS?' link</p></td>
+                            <td></td>
+                            <td><p>The 'Who Gets MS?' page is displayed</p></td>
+                            <td>UNEXECUTED</td>
+                            <td></td>
+                            <td></td>
+                        </tr>
+                    
+                        <tr>
+                            <td>a405fa6e-1057-42eb-beca-d999206a3ea2</td>
+                            <td>9</td>
+                            <td><p>Click the breadcrumb link to go back to the 'What Is MS?' page.</p></td>
+                            <td></td>
+                            <td><p>The 'What Is MS?' page is displayed.</p></td>
+                            <td>UNEXECUTED</td>
+                            <td></td>
+                            <td></td>
+                        </tr>
+                    
+                        <tr>
+                            <td>8aea54e5-1615-49bf-8ef2-dfe7d009d811</td>
+                            <td>10</td>
+                            <td><p>Click the 'Multiple Sclerosis FAQs' link</p></td>
+                            <td></td>
+                            <td><p>The 'Multiple Sclerosis FAQs' page is displayed</p></td>
+                            <td>UNEXECUTED</td>
+                            <td></td>
+                            <td></td>
+                        </tr>
+                    
+                        <tr>
+                            <td>3b98a769-486b-41e4-bbc6-918750bb036c</td>
+                            <td>11</td>
+                            <td><p>Click the breadcrumb link to go back to the 'What Is MS?' page.</p></td>
+                            <td></td>
+                            <td><p>The 'What Is MS?' page is displayed.</p></td>
+                            <td>UNEXECUTED</td>
+                            <td></td>
+                            <td></td>
+                        </tr>
+                    
+                        <tr>
+                            <td>b3828506-4a54-4ceb-a2e4-e6d28e0113a7</td>
+                            <td>12</td>
+                            <td><p>Click the 'Types of MS' link</p></td>
+                            <td></td>
+                            <td><p>The 'Types of MS' page is displayed.</p></td>
+                            <td>UNEXECUTED</td>
+                            <td></td>
+                            <td></td>
+                        </tr>
+                    
+                        <tr>
+                            <td>989b2f0c-1277-4d50-832e-cf160c50c487</td>
+                            <td>13</td>
+                            <td><p>Click the breadcrumb link to go back to the 'What Is MS?' page.</p></td>
+                            <td></td>
+                            <td><p>The 'What Is MS?' page is displayed.</p></td>
+                            <td>UNEXECUTED</td>
+                            <td></td>
+                            <td></td>
+                        </tr>
+                    
+                        <tr>
+                            <td>c46424f4-66c0-40fd-8b7c-c5f1c57750ee</td>
+                            <td>14</td>
+                            <td><p>Click the 'Related Conditions' link</p></td>
+                            <td></td>
+                            <td><p>The 'Related Conditions' page is displayed.</p></td>
+                            <td>UNEXECUTED</td>
+                            <td></td>
+                            <td></td>
+                        </tr>
+                    
+                        <tr>
+                            <td>ee05c2ad-50fd-4046-a17b-be05dbb594a9</td>
+                            <td>15</td>
+                            <td><p>Click the breadcrumb link to go back to the 'What Is MS?' page.</p></td>
+                            <td></td>
+                            <td><p>The 'What Is MS?' page is displayed.</p></td>
+                            <td>UNEXECUTED</td>
+                            <td></td>
+                            <td></td>
+                        </tr>
+                    
+                        <tr>
+                            <td>3286f755-7a88-4d68-966d-27b92bb8b9da</td>
+                            <td>16</td>
+                            <td><p>Click the breadcrumb link to go back to the main page.</p></td>
+                            <td></td>
+                            <td><p>The main page is displayed.</p></td>
+                            <td>UNEXECUTED</td>
+                            <td></td>
+                            <td></td>
+                        </tr>
+                    
+                
+            
+                
+                    <tr>
+                        <td rowspan="13">739ef61f-36a9-418a-ab99-1bfbfeb89a20</td>
+                        <td rowspan="13">Helen Brennan Solo Project</td>
+                        <td rowspan="13"></td>
+                        <td rowspan="13">Q4H-115</td>
+                        <td rowspan="13">External links - guest users</td>
+                        <td rowspan="13">QLH4 Helen</td>
+                        <td rowspan="13"></td>
+                        <td rowspan="13">Unscheduled</td>
+                        <td rowspan="13">Medium</td>
+                        <td rowspan="13">Helen Brennan</td>
+                        <td rowspan="13">Tue Sep 03 14:26:21 PDT 2019</td>
+                        <td rowspan="13">PASS</td>
+                        <td rowspan="13"></td>
+                        <td rowspan="13">Tue Sep 03 14:25:01 PDT 2019</td>
+                        <td rowspan="13">Helen Brennan</td>
+                        <td rowspan="13"></td>
+                        <td rowspan="13"></td>
+                        <td rowspan="13"></td>
+                        <td rowspan="13"></td>
+                        
+                            <td>fda955df-cf34-483f-a0c2-3d28233da7f1</td>
+                            <td>1</td>
+                            <td><p>Access the website</p></td>
+                            <td><p>https://www.nationalmssociety.org</p></td>
+                            <td><p>The website displays.</p></td>
+                            <td>UNEXECUTED</td>
+                            <td></td>
+                            <td></td>
+                        
+                    </tr>
+                    
+                        <tr>
+                            <td>fbc7b70a-0bf0-4fa8-85b7-405aaa59787f</td>
+                            <td>2</td>
+                            <td><p>Ensure that the link at the top says 'Sign In' and not 'Hello, Helen'.</p></td>
+                            <td></td>
+                            <td></td>
+                            <td>UNEXECUTED</td>
+                            <td></td>
+                            <td></td>
+                        </tr>
+                    
+                        <tr>
+                            <td>6bcf5040-851d-4d04-8ede-f93dd4e3885b</td>
+                            <td>3</td>
+                            <td><p>Click the Facebook icon toward the bottom of the page.</p></td>
+                            <td></td>
+                            <td><p>A new tab is opened to the National Multiple Sclerosis Society Facebook page.</p></td>
+                            <td>UNEXECUTED</td>
+                            <td></td>
+                            <td></td>
+                        </tr>
+                    
+                        <tr>
+                            <td>ec267185-9105-429e-8d7a-2ebd926a82f4</td>
+                            <td>4</td>
+                            <td><p>Close the Facebook tab</p></td>
+                            <td></td>
+                            <td></td>
+                            <td>UNEXECUTED</td>
+                            <td></td>
+                            <td></td>
+                        </tr>
+                    
+                        <tr>
+                            <td>e81527af-fa81-4075-be4b-d514a0412d5f</td>
+                            <td>5</td>
+                            <td><p>From the National MS Society website, click the Twitter icon toward the bottom of the page.</p></td>
+                            <td></td>
+                            <td><p>A new tab is opened to the National Multiple Sclerosis Society Twitter page.</p></td>
+                            <td>UNEXECUTED</td>
+                            <td></td>
+                            <td></td>
+                        </tr>
+                    
+                        <tr>
+                            <td>1f98fc4e-dfbf-4691-9635-452275a5c5df</td>
+                            <td>6</td>
+                            <td><p>Close the Twitter tab.</p></td>
+                            <td></td>
+                            <td></td>
+                            <td>UNEXECUTED</td>
+                            <td></td>
+                            <td></td>
+                        </tr>
+                    
+                        <tr>
+                            <td>beae5803-4326-436f-9309-074f220c7555</td>
+                            <td>7</td>
+                            <td><p>From the National MS Society website, click the Instagram icon toward the bottom of the page.</p></td>
+                            <td></td>
+                            <td><p>A new tab is opened to the National Multiple Sclerosis Society Instagram page.</p></td>
+                            <td>UNEXECUTED</td>
+                            <td></td>
+                            <td></td>
+                        </tr>
+                    
+                        <tr>
+                            <td>3146b1c7-5097-4c1c-a30b-613640085f4f</td>
+                            <td>8</td>
+                            <td><p>Close the Instagram tab.</p></td>
+                            <td></td>
+                            <td></td>
+                            <td>UNEXECUTED</td>
+                            <td></td>
+                            <td></td>
+                        </tr>
+                    
+                        <tr>
+                            <td>0a436738-17f8-4346-ab80-28b7798efaf7</td>
+                            <td>9</td>
+                            <td><p>From the National MS Society website, click the LinkedIn icon toward the bottom of the page.</p></td>
+                            <td></td>
+                            <td><p>A new tab is opened to the National Multiple Sclerosis Society LinkedIn page.</p></td>
+                            <td>UNEXECUTED</td>
+                            <td></td>
+                            <td></td>
+                        </tr>
+                    
+                        <tr>
+                            <td>7d10839d-5071-443c-a86b-7609d94a4e27</td>
+                            <td>10</td>
+                            <td><p>Close the LinkedIn tab.</p></td>
+                            <td></td>
+                            <td></td>
+                            <td>UNEXECUTED</td>
+                            <td></td>
+                            <td></td>
+                        </tr>
+                    
+                        <tr>
+                            <td>235c8d0f-9019-493b-8542-7fd7b6edd96c</td>
+                            <td>11</td>
+                            <td><p>From the National MS Society website, click the YouTube icon toward the bottom of the page.</p></td>
+                            <td></td>
+                            <td><p>A new tab is opened to the National Multiple Sclerosis Society YouTube page.</p></td>
+                            <td>UNEXECUTED</td>
+                            <td></td>
+                            <td></td>
+                        </tr>
+                    
+                        <tr>
+                            <td>116ee7b8-ba8f-488f-af73-14abed3b1f24</td>
+                            <td>12</td>
+                            <td><p>Close the YouTube tab.</p></td>
+                            <td></td>
+                            <td></td>
+                            <td>UNEXECUTED</td>
+                            <td></td>
+                            <td></td>
+                        </tr>
+                    
+                        <tr>
+                            <td>d7d9d0b3-5307-4265-ae9f-df9bfebcab95</td>
+                            <td>13</td>
+                            <td><p>From the National MS Society website, click the last icon toward the bottom of the page that looks like three silhouettes</p></td>
+                            <td></td>
+                            <td><p>A new tab is opened to the MS Connection website.</p></td>
+                            <td>UNEXECUTED</td>
+                            <td></td>
+                            <td></td>
+                        </tr>
+                    
+                
+            
+                
+                    <tr>
+                        <td rowspan="13">86719b9f-430f-4f46-908d-975615b3a680</td>
+                        <td rowspan="13">Helen Brennan Solo Project</td>
+                        <td rowspan="13"></td>
+                        <td rowspan="13">Q4H-116</td>
+                        <td rowspan="13">External links - registered users</td>
+                        <td rowspan="13">QLH4 Helen</td>
+                        <td rowspan="13"></td>
+                        <td rowspan="13">Unscheduled</td>
+                        <td rowspan="13">Medium</td>
+                        <td rowspan="13">Helen Brennan</td>
+                        <td rowspan="13">Tue Sep 03 14:26:29 PDT 2019</td>
+                        <td rowspan="13">PASS</td>
+                        <td rowspan="13"></td>
+                        <td rowspan="13">Tue Sep 03 14:25:14 PDT 2019</td>
+                        <td rowspan="13">Helen Brennan</td>
+                        <td rowspan="13"></td>
+                        <td rowspan="13"></td>
+                        <td rowspan="13"></td>
+                        <td rowspan="13"></td>
+                        
+                            <td>6af3db41-afaa-4496-880f-d198c9014176</td>
+                            <td>1</td>
+                            <td><p>Access the website</p></td>
+                            <td><p>https://www.nationalmssociety.org</p></td>
+                            <td><p>The website displays.</p></td>
+                            <td>UNEXECUTED</td>
+                            <td></td>
+                            <td></td>
+                        
+                    </tr>
+                    
+                        <tr>
+                            <td>8a57ca68-e557-40fb-bccb-abc79b637a12</td>
+                            <td>2</td>
+                            <td><p>Ensure that the link at the top says 'Hello, Helen' and not 'Sign In'.</p></td>
+                            <td></td>
+                            <td></td>
+                            <td>UNEXECUTED</td>
+                            <td></td>
+                            <td></td>
+                        </tr>
+                    
+                        <tr>
+                            <td>dc5c715b-e079-424e-af57-d37312e48718</td>
+                            <td>3</td>
+                            <td><p>Click the Facebook icon toward the bottom of the page.</p></td>
+                            <td></td>
+                            <td><p>A new tab is opened to the National Multiple Sclerosis Society Facebook page.</p></td>
+                            <td>UNEXECUTED</td>
+                            <td></td>
+                            <td></td>
+                        </tr>
+                    
+                        <tr>
+                            <td>b42e2c93-d2a1-4311-a740-718c40fcf5b4</td>
+                            <td>4</td>
+                            <td><p>Close the Facebook tab</p></td>
+                            <td></td>
+                            <td></td>
+                            <td>UNEXECUTED</td>
+                            <td></td>
+                            <td></td>
+                        </tr>
+                    
+                        <tr>
+                            <td>672ce9e6-0497-4a73-8104-524fc3e6f8f6</td>
+                            <td>5</td>
+                            <td><p>From the National MS Society website, click the Twitter icon toward the bottom of the page.</p></td>
+                            <td></td>
+                            <td><p>A new tab is opened to the National Multiple Sclerosis Society Twitter page.</p></td>
+                            <td>UNEXECUTED</td>
+                            <td></td>
+                            <td></td>
+                        </tr>
+                    
+                        <tr>
+                            <td>6c870b2c-b67a-471a-ba9e-8a5a6ebf0eab</td>
+                            <td>6</td>
+                            <td><p>Close the Twitter tab.</p></td>
+                            <td></td>
+                            <td></td>
+                            <td>UNEXECUTED</td>
+                            <td></td>
+                            <td></td>
+                        </tr>
+                    
+                        <tr>
+                            <td>069edc41-9389-4932-808b-ce94e15a536f</td>
+                            <td>7</td>
+                            <td><p>From the National MS Society website, click the Instagram icon toward the bottom of the page.</p></td>
+                            <td></td>
+                            <td><p>A new tab is opened to the National Multiple Sclerosis Society Instagram page.</p></td>
+                            <td>UNEXECUTED</td>
+                            <td></td>
+                            <td></td>
+                        </tr>
+                    
+                        <tr>
+                            <td>14a82054-2004-41b0-9ca6-8c16a4811165</td>
+                            <td>8</td>
+                            <td><p>Close the Instagram tab.</p></td>
+                            <td></td>
+                            <td></td>
+                            <td>UNEXECUTED</td>
+                            <td></td>
+                            <td></td>
+                        </tr>
+                    
+                        <tr>
+                            <td>80a94b55-1f78-4edf-8fcc-6a4e2577d3ec</td>
+                            <td>9</td>
+                            <td><p>From the National MS Society website, click the LinkedIn icon toward the bottom of the page.</p></td>
+                            <td></td>
+                            <td><p>A new tab is opened to the National Multiple Sclerosis Society LinkedIn page.</p></td>
+                            <td>UNEXECUTED</td>
+                            <td></td>
+                            <td></td>
+                        </tr>
+                    
+                        <tr>
+                            <td>81227efe-856d-4e8a-8b99-76d7e05aa2f6</td>
+                            <td>10</td>
+                            <td><p>Close the LinkedIn tab.</p></td>
+                            <td></td>
+                            <td></td>
+                            <td>UNEXECUTED</td>
+                            <td></td>
+                            <td></td>
+                        </tr>
+                    
+                        <tr>
+                            <td>31b8e1eb-1dfd-438e-b2b0-d1e738874662</td>
+                            <td>11</td>
+                            <td><p>From the National MS Society website, click the YouTube icon toward the bottom of the page.</p></td>
+                            <td></td>
+                            <td><p>A new tab is opened to the National Multiple Sclerosis Society YouTube page.</p></td>
+                            <td>UNEXECUTED</td>
+                            <td></td>
+                            <td></td>
+                        </tr>
+                    
+                        <tr>
+                            <td>a49225a1-02b2-4733-9bbc-88358a7bddd6</td>
+                            <td>12</td>
+                            <td><p>Close the YouTube tab.</p></td>
+                            <td></td>
+                            <td></td>
+                            <td>UNEXECUTED</td>
+                            <td></td>
+                            <td></td>
+                        </tr>
+                    
+                        <tr>
+                            <td>11d0fbad-2ae6-4b5b-b5f4-065965dfd434</td>
+                            <td>13</td>
+                            <td><p>From the National MS Society website, click the last icon toward the bottom of the page that looks like three silhouettes</p></td>
+                            <td></td>
+                            <td><p>A new tab is opened to the MS Connection website.</p></td>
+                            <td>UNEXECUTED</td>
+                            <td></td>
+                            <td></td>
+                        </tr>
+                    
+                
+            
+                
+                    <tr>
+                        <td rowspan="4">ea520595-0f35-48aa-aaa2-75a16c24bef6</td>
+                        <td rowspan="4">Helen Brennan Solo Project</td>
+                        <td rowspan="4"></td>
+                        <td rowspan="4">Q4H-119</td>
+                        <td rowspan="4">Search function</td>
+                        <td rowspan="4">QLH4 Helen</td>
+                        <td rowspan="4"></td>
+                        <td rowspan="4">Unscheduled</td>
+                        <td rowspan="4">Medium</td>
+                        <td rowspan="4">Helen Brennan</td>
+                        <td rowspan="4">Tue Sep 03 14:26:44 PDT 2019</td>
+                        <td rowspan="4">PASS</td>
+                        <td rowspan="4"></td>
+                        <td rowspan="4">Tue Sep 03 14:25:15 PDT 2019</td>
+                        <td rowspan="4">Helen Brennan</td>
+                        <td rowspan="4"></td>
+                        <td rowspan="4"></td>
+                        <td rowspan="4"></td>
+                        <td rowspan="4"></td>
+                        
+                            <td>a53b984a-7bba-42c9-b2d0-b4626cb311c4</td>
+                            <td>1</td>
+                            <td><p>Access the website.</p></td>
+                            <td><p>https://www.nationalmssociety.org</p></td>
+                            <td><p>The main page is displayed.</p></td>
+                            <td>UNEXECUTED</td>
+                            <td></td>
+                            <td></td>
+                        
+                    </tr>
+                    
+                        <tr>
+                            <td>aa059ba6-f64b-4750-985f-8fd0e22274d6</td>
+                            <td>2</td>
+                            <td><p>Click into the 'Search our website' box</p></td>
+                            <td></td>
+                            <td></td>
+                            <td>UNEXECUTED</td>
+                            <td></td>
+                            <td></td>
+                        </tr>
+                    
+                        <tr>
+                            <td>7c55a6fb-f9e5-4626-b719-81214822c9d7</td>
+                            <td>3</td>
+                            <td><p>Enter in a search term</p></td>
+                            <td><p>Copaxone</p></td>
+                            <td></td>
+                            <td>UNEXECUTED</td>
+                            <td></td>
+                            <td></td>
+                        </tr>
+                    
+                        <tr>
+                            <td>72677c47-7d22-4eb4-a020-974541aec42b</td>
+                            <td>4</td>
+                            <td><p>Click the magnifying glass to send the search request</p></td>
+                            <td></td>
+                            <td><p>The search results should include reference to 'Copaxone'</p></td>
+                            <td>UNEXECUTED</td>
+                            <td></td>
+                            <td></td>
+                        </tr>
+                    
+                
+            
+                
+                    <tr>
+                        <td rowspan="17">b833a4bf-5380-4f9a-8899-376b04a13892</td>
+                        <td rowspan="17">Helen Brennan Solo Project</td>
+                        <td rowspan="17"></td>
+                        <td rowspan="17">Q4H-104</td>
+                        <td rowspan="17">Internal links - guest users - Resources &amp; Support</td>
+                        <td rowspan="17">QLH4 Helen</td>
+                        <td rowspan="17"></td>
+                        <td rowspan="17">Unscheduled</td>
+                        <td rowspan="17">Medium</td>
+                        <td rowspan="17">Helen Brennan</td>
+                        <td rowspan="17">Tue Sep 03 14:26:34 PDT 2019</td>
+                        <td rowspan="17">PASS</td>
+                        <td rowspan="17"></td>
+                        <td rowspan="17">Tue Sep 03 14:24:51 PDT 2019</td>
+                        <td rowspan="17">Helen Brennan</td>
+                        <td rowspan="17"></td>
+                        <td rowspan="17"></td>
+                        <td rowspan="17"></td>
+                        <td rowspan="17"></td>
+                        
+                            <td>e4088543-1d24-42e2-bb48-78ca552a7336</td>
+                            <td>1</td>
+                            <td><p>Access the website</p></td>
+                            <td><p>https://www.nationalmssociety.org</p></td>
+                            <td><p>The website displays.</p></td>
+                            <td>UNEXECUTED</td>
+                            <td></td>
+                            <td></td>
+                        
+                    </tr>
+                    
+                        <tr>
+                            <td>9ab07240-1db6-4372-9c53-deb8568648d3</td>
+                            <td>2</td>
+                            <td><p>Ensure that the link at the top says 'Sign In' and not 'Hello, Helen'</p></td>
+                            <td></td>
+                            <td></td>
+                            <td>UNEXECUTED</td>
+                            <td></td>
+                            <td></td>
+                        </tr>
+                    
+                        <tr>
+                            <td>ff9b275c-89e6-4545-81e5-1ba2cb7cc5aa</td>
+                            <td>3</td>
+                            <td><p>Click the 'Treating MS' link in the menu bar.</p></td>
+                            <td></td>
+                            <td><p>The 'Treating MS' page is displayed.</p></td>
+                            <td>UNEXECUTED</td>
+                            <td></td>
+                            <td></td>
+                        </tr>
+                    
+                        <tr>
+                            <td>44651a5c-dd32-4026-ae3d-1e2eb0232ef6</td>
+                            <td>4</td>
+                            <td><p>Click the 'Comprehensive Care' link</p></td>
+                            <td></td>
+                            <td><p>The 'Comprehensive Care' page is displayed.</p></td>
+                            <td>UNEXECUTED</td>
+                            <td></td>
+                            <td></td>
+                        </tr>
+                    
+                        <tr>
+                            <td>92bd431d-5f0a-4cec-9fcb-6e9487795282</td>
+                            <td>5</td>
+                            <td><p>Click the breadcrumb link to go back to the 'Treating MS' page.</p></td>
+                            <td></td>
+                            <td><p>The 'Treating MS' page is displayed.</p></td>
+                            <td>UNEXECUTED</td>
+                            <td></td>
+                            <td></td>
+                        </tr>
+                    
+                        <tr>
+                            <td>e60a67e6-0906-4a55-b91e-aaff1a92581f</td>
+                            <td>6</td>
+                            <td><p>Click the 'Find Doctors & Resources' link.</p></td>
+                            <td></td>
+                            <td><p>The 'Find Doctors & Resources' page is displayed.</p></td>
+                            <td>UNEXECUTED</td>
+                            <td></td>
+                            <td></td>
+                        </tr>
+                    
+                        <tr>
+                            <td>871d43d3-4312-4f17-8f98-ef38e09ce8ed</td>
+                            <td>7</td>
+                            <td><p>Click the breadcrumb link to go back to the 'Treating MS' page.</p></td>
+                            <td></td>
+                            <td><p>The 'Treating MS' page is displayed.</p></td>
+                            <td>UNEXECUTED</td>
+                            <td></td>
+                            <td></td>
+                        </tr>
+                    
+                        <tr>
+                            <td>09b25479-c9d5-4e99-b59a-a5ad159f6ba5</td>
+                            <td>8</td>
+                            <td><p>Click the 'Medications' link</p></td>
+                            <td></td>
+                            <td><p>The 'Medications' page is displayed</p></td>
+                            <td>UNEXECUTED</td>
+                            <td></td>
+                            <td></td>
+                        </tr>
+                    
+                        <tr>
+                            <td>73ccc2c7-c2d0-4840-ba5e-b9e06398ddd7</td>
+                            <td>9</td>
+                            <td><p>Click the breadcrumb link to go back to the 'Treating MS' page.</p></td>
+                            <td></td>
+                            <td><p>The 'Treating MS' page is displayed.</p></td>
+                            <td>UNEXECUTED</td>
+                            <td></td>
+                            <td></td>
+                        </tr>
+                    
+                        <tr>
+                            <td>bdca2c3d-bab6-4a71-8e7f-ad23ffc5b27f</td>
+                            <td>10</td>
+                            <td><p>Click the 'Managing Relapses' link</p></td>
+                            <td></td>
+                            <td><p>The 'Managing Relapses' page is displayed</p></td>
+                            <td>UNEXECUTED</td>
+                            <td></td>
+                            <td></td>
+                        </tr>
+                    
+                        <tr>
+                            <td>71a03461-65bb-4047-b4aa-a7f4ec8781e9</td>
+                            <td>11</td>
+                            <td><p>Click the breadcrumb link to go back to the 'Treating MS' page.</p></td>
+                            <td></td>
+                            <td><p>The 'What Is MS?' page is displayed.</p></td>
+                            <td>UNEXECUTED</td>
+                            <td></td>
+                            <td></td>
+                        </tr>
+                    
+                        <tr>
+                            <td>f67335cb-ec22-4d8a-a306-6e025fe53947</td>
+                            <td>12</td>
+                            <td><p>Click the 'Rehabilitation' link</p></td>
+                            <td></td>
+                            <td><p>The 'Rehabilitation' page is displayed.</p></td>
+                            <td>UNEXECUTED</td>
+                            <td></td>
+                            <td></td>
+                        </tr>
+                    
+                        <tr>
+                            <td>226d8b64-b510-4744-99c4-d6508b00defc</td>
+                            <td>13</td>
+                            <td><p>Click the breadcrumb link to go back to the 'Treating MS' page.</p></td>
+                            <td></td>
+                            <td><p>The 'Treating MS' page is displayed.</p></td>
+                            <td>UNEXECUTED</td>
+                            <td></td>
+                            <td></td>
+                        </tr>
+                    
+                        <tr>
+                            <td>26002928-c46c-41b2-a5e7-346642cf67bc</td>
+                            <td>14</td>
+                            <td><p>Click the 'Clinically Isolated Syndrome (CIS)' link</p></td>
+                            <td></td>
+                            <td><p>The 'Complementary & Alternative Medicines' page is displayed.</p></td>
+                            <td>UNEXECUTED</td>
+                            <td></td>
+                            <td></td>
+                        </tr>
+                    
+                        <tr>
+                            <td>41db588b-0674-4932-828b-197d220dddc2</td>
+                            <td>15</td>
+                            <td><p>Click the breadcrumb link to go back to the 'Treating MS' page.</p></td>
+                            <td></td>
+                            <td><p>The 'Treating MS' page is displayed.</p></td>
+                            <td>UNEXECUTED</td>
+                            <td></td>
+                            <td></td>
+                        </tr>
+                    
+                        <tr>
+                            <td>d1e0ee1d-50ab-4c37-8a70-3baf517d8e6a</td>
+                            <td>16</td>
+                            <td><p>Click the 'For Clinicians' link.</p></td>
+                            <td></td>
+                            <td><p>The 'For Clinicians' page is displayed.</p></td>
+                            <td>UNEXECUTED</td>
+                            <td></td>
+                            <td></td>
+                        </tr>
+                    
+                        <tr>
+                            <td>1b819853-1979-4be5-afaa-32b9202531ee</td>
+                            <td>17</td>
+                            <td><p>Click the breadcrumb link to go back to the main page.</p></td>
+                            <td></td>
+                            <td><p>The main page is displayed.</p></td>
+                            <td>UNEXECUTED</td>
+                            <td></td>
+                            <td></td>
+                        </tr>
+                    
+                
+            
+                
+                    <tr>
+                        <td rowspan="5">c49c0ac8-3e57-48e9-b019-7a5cb1dbe21a</td>
+                        <td rowspan="5">Helen Brennan Solo Project</td>
+                        <td rowspan="5"></td>
+                        <td rowspan="5">Q4H-121</td>
+                        <td rowspan="5">Incorrect user password</td>
+                        <td rowspan="5">QLH4 Helen</td>
+                        <td rowspan="5"></td>
+                        <td rowspan="5">Unscheduled</td>
+                        <td rowspan="5">Medium</td>
+                        <td rowspan="5">Helen Brennan</td>
+                        <td rowspan="5">Tue Sep 03 14:26:36 PDT 2019</td>
+                        <td rowspan="5">PASS</td>
+                        <td rowspan="5"></td>
+                        <td rowspan="5">Tue Sep 03 14:25:16 PDT 2019</td>
+                        <td rowspan="5">Helen Brennan</td>
+                        <td rowspan="5"></td>
+                        <td rowspan="5"></td>
+                        <td rowspan="5"></td>
+                        <td rowspan="5"></td>
+                        
+                            <td>d8d50ff3-6a90-4207-a9b5-ea7545d6878d</td>
+                            <td>1</td>
+                            <td><p>Access the website.</p></td>
+                            <td><p>https://www.nationalmssociety.org</p></td>
+                            <td><p>The main page is displayed.</p></td>
+                            <td>UNEXECUTED</td>
+                            <td></td>
+                            <td></td>
+                        
+                    </tr>
+                    
+                        <tr>
+                            <td>9291a4f0-081c-4314-aa26-69ba7554ba12</td>
+                            <td>2</td>
+                            <td><p>Click the 'Sign In' link in the top header.</p></td>
+                            <td></td>
+                            <td><p>The 'Sign In' page is displayed.</p></td>
+                            <td>UNEXECUTED</td>
+                            <td></td>
+                            <td></td>
+                        </tr>
+                    
+                        <tr>
+                            <td>d66f6459-8474-490d-be5f-50bd7c0834f1</td>
+                            <td>3</td>
+                            <td><p>In the 'Returning? Sign In' box, enter incorrect username</p></td>
+                            <td><p>username: HB_78</p></td>
+                            <td></td>
+                            <td>UNEXECUTED</td>
+                            <td></td>
+                            <td></td>
+                        </tr>
+                    
+                        <tr>
+                            <td>27c8491c-64b9-4717-8cb8-2bb7f7a749c9</td>
+                            <td>4</td>
+                            <td><p>Enter correct password</p></td>
+                            <td><p>password: some_password</p></td>
+                            <td></td>
+                            <td>UNEXECUTED</td>
+                            <td></td>
+                            <td></td>
+                        </tr>
+                    
+                        <tr>
+                            <td>93a49e3a-1cc2-444e-8886-e7c332bf0da5</td>
+                            <td>5</td>
+                            <td><p>Click the 'Sign In' button</p></td>
+                            <td></td>
+                            <td><p>An error should display stating "Incorrect user name or password."</p></td>
+                            <td>UNEXECUTED</td>
+                            <td></td>
+                            <td></td>
+                        </tr>
+                    
+                
+            
+                
+                    <tr>
+                        <td rowspan="4">da9e8e11-8526-4b99-bcec-d779b3173a74</td>
+                        <td rowspan="4">Helen Brennan Solo Project</td>
+                        <td rowspan="4"></td>
+                        <td rowspan="4">Q4H-99</td>
+                        <td rowspan="4">Website registration</td>
+                        <td rowspan="4">QLH4 Helen</td>
+                        <td rowspan="4"></td>
+                        <td rowspan="4">Unscheduled</td>
+                        <td rowspan="4">Medium</td>
+                        <td rowspan="4">Helen Brennan</td>
+                        <td rowspan="4">Tue Sep 03 14:26:38 PDT 2019</td>
+                        <td rowspan="4">PASS</td>
+                        <td rowspan="4"></td>
+                        <td rowspan="4">Tue Sep 03 14:24:47 PDT 2019</td>
+                        <td rowspan="4">Helen Brennan</td>
+                        <td rowspan="4"></td>
+                        <td rowspan="4"></td>
+                        <td rowspan="4"></td>
+                        <td rowspan="4"></td>
+                        
+                            <td>8fa6e2cd-0cc8-4c4a-96cc-ce93c641ea84</td>
+                            <td>1</td>
+                            <td><p>Access website</p></td>
+                            <td><p>https://www.nationalmssociety.org/</p></td>
+                            <td><p>The main page loads</p></td>
+                            <td>UNEXECUTED</td>
+                            <td></td>
+                            <td></td>
+                        
+                    </tr>
+                    
+                        <tr>
+                            <td>f4cc2590-1f89-44f6-b1fb-df9e238b0453</td>
+                            <td>2</td>
+                            <td><p>Click the 'Sign In' link at the top of the page.</p></td>
+                            <td></td>
+                            <td><p>The 'Sign In' page loads.</p></td>
+                            <td>UNEXECUTED</td>
+                            <td></td>
+                            <td></td>
+                        </tr>
+                    
+                        <tr>
+                            <td>72fb7e48-24ba-4687-be9c-c51a19a8f5d6</td>
+                            <td>3</td>
+                            <td><p>In the 'New? Create an account'  enter requested information.</p></td>
+                            <td><p>First Name: Helen</br>Last Name: Brennan</br>Email: helenbrennan78@gmail.com</br>Zip/Postal Code: 84010</br>Username: HB_78</br>Password: some_pa55word</br>Confirm Password: some_pa55word</br>Complete CAPTCHA</p></td>
+                            <td><p>A new account is created.</p></td>
+                            <td>UNEXECUTED</td>
+                            <td></td>
+                            <td></td>
+                        </tr>
+                    
+                        <tr>
+                            <td>137a69fa-0969-41e8-8192-2b9818d899f1</td>
+                            <td>4</td>
+                            <td><p>Click 'Register' button</p></td>
+                            <td></td>
+                            <td></td>
+                            <td>UNEXECUTED</td>
+                            <td></td>
+                            <td></td>
+                        </tr>
+                    
+                
+            
+                
+                    <tr>
+                        <td rowspan="16">e4b908c9-3fb2-45b3-ac93-28fe8dd0eb09</td>
+                        <td rowspan="16">Helen Brennan Solo Project</td>
+                        <td rowspan="16"></td>
+                        <td rowspan="16">Q4H-108</td>
+                        <td rowspan="16">Internal links - registered users - What is MS?</td>
+                        <td rowspan="16">QLH4 Helen</td>
+                        <td rowspan="16"></td>
+                        <td rowspan="16">Unscheduled</td>
+                        <td rowspan="16">Medium</td>
+                        <td rowspan="16">Helen Brennan</td>
+                        <td rowspan="16">Tue Sep 03 14:26:41 PDT 2019</td>
+                        <td rowspan="16">PASS</td>
+                        <td rowspan="16"></td>
+                        <td rowspan="16">Tue Sep 03 14:24:54 PDT 2019</td>
+                        <td rowspan="16">Helen Brennan</td>
+                        <td rowspan="16"></td>
+                        <td rowspan="16"></td>
+                        <td rowspan="16"></td>
+                        <td rowspan="16"></td>
+                        
+                            <td>14a04640-5672-4215-8fd6-e2fdba504cdf</td>
+                            <td>1</td>
+                            <td><p>Access the website</p></td>
+                            <td><p>https://www.nationalmssociety.org</p></td>
+                            <td><p>The website displays.</p></td>
+                            <td>UNEXECUTED</td>
+                            <td></td>
+                            <td></td>
+                        
+                    </tr>
+                    
+                        <tr>
+                            <td>93120f1c-2f3b-42d9-ba39-3fed01fd5dab</td>
+                            <td>2</td>
+                            <td><p>Ensure that the link at the top says 'Hello, Helen' and not 'Sign In'.</p></td>
+                            <td></td>
+                            <td></td>
+                            <td>UNEXECUTED</td>
+                            <td></td>
+                            <td></td>
+                        </tr>
+                    
+                        <tr>
+                            <td>afaad852-bd3b-4c97-b225-3754d354d235</td>
+                            <td>3</td>
+                            <td><p>Click the 'What Is MS?' link in the menu bar.</p></td>
+                            <td></td>
+                            <td><p>The 'What Is MS?' page is displayed.</p></td>
+                            <td>UNEXECUTED</td>
+                            <td></td>
+                            <td></td>
+                        </tr>
+                    
+                        <tr>
+                            <td>39b7d569-6b87-4eb1-9e25-5e884bd1418f</td>
+                            <td>4</td>
+                            <td><p>Click the 'Definition of MS' link</p></td>
+                            <td></td>
+                            <td><p>The 'Definition of MS' page is displayed.</p></td>
+                            <td>UNEXECUTED</td>
+                            <td></td>
+                            <td></td>
+                        </tr>
+                    
+                        <tr>
+                            <td>ae107e8f-08d4-4c18-907b-11d8079a8ed4</td>
+                            <td>5</td>
+                            <td><p>Click the breadcrumb link to go back to the 'What Is MS?' page.</p></td>
+                            <td></td>
+                            <td><p>The 'What Is MS?' page is displayed.</p></td>
+                            <td>UNEXECUTED</td>
+                            <td></td>
+                            <td></td>
+                        </tr>
+                    
+                        <tr>
+                            <td>f30aff04-7d5a-4fff-a3ee-43768cf2da74</td>
+                            <td>6</td>
+                            <td><p>Click the 'What Causes MS?' link.</p></td>
+                            <td></td>
+                            <td><p>The 'What Causes MS?' page is displayed.</p></td>
+                            <td>UNEXECUTED</td>
+                            <td></td>
+                            <td></td>
+                        </tr>
+                    
+                        <tr>
+                            <td>d1fa8008-d84c-4328-aab7-1be70e98a159</td>
+                            <td>7</td>
+                            <td><p>Click the breadcrumb link to go back to the 'What Is MS?' page.</p></td>
+                            <td></td>
+                            <td><p>The 'What Is MS?' page is displayed.</p></td>
+                            <td>UNEXECUTED</td>
+                            <td></td>
+                            <td></td>
+                        </tr>
+                    
+                        <tr>
+                            <td>8a9fb7b8-016f-4d1c-ba11-528c5c63ee0f</td>
+                            <td>8</td>
+                            <td><p>Click the 'Who Gets MS?' link</p></td>
+                            <td></td>
+                            <td><p>The 'Who Gets MS?' page is displayed</p></td>
+                            <td>UNEXECUTED</td>
+                            <td></td>
+                            <td></td>
+                        </tr>
+                    
+                        <tr>
+                            <td>b9459e33-cbea-4cb8-b476-8078b1717391</td>
+                            <td>9</td>
+                            <td><p>Click the breadcrumb link to go back to the 'What Is MS?' page.</p></td>
+                            <td></td>
+                            <td><p>The 'What Is MS?' page is displayed.</p></td>
+                            <td>UNEXECUTED</td>
+                            <td></td>
+                            <td></td>
+                        </tr>
+                    
+                        <tr>
+                            <td>73d30bf6-9ba0-4dd1-a2a8-6e08cc728f31</td>
+                            <td>10</td>
+                            <td><p>Click the 'Multiple Sclerosis FAQs' link</p></td>
+                            <td></td>
+                            <td><p>The 'Multiple Sclerosis FAQs' page is displayed</p></td>
+                            <td>UNEXECUTED</td>
+                            <td></td>
+                            <td></td>
+                        </tr>
+                    
+                        <tr>
+                            <td>58433a8d-92b4-44df-8068-c6eed99d2a43</td>
+                            <td>11</td>
+                            <td><p>Click the breadcrumb link to go back to the 'What Is MS?' page.</p></td>
+                            <td></td>
+                            <td><p>The 'What Is MS?' page is displayed.</p></td>
+                            <td>UNEXECUTED</td>
+                            <td></td>
+                            <td></td>
+                        </tr>
+                    
+                        <tr>
+                            <td>42df4740-4854-4ce5-a2c0-d29064a9d8d1</td>
+                            <td>12</td>
+                            <td><p>Click the 'Types of MS' link</p></td>
+                            <td></td>
+                            <td><p>The 'Types of MS' page is displayed.</p></td>
+                            <td>UNEXECUTED</td>
+                            <td></td>
+                            <td></td>
+                        </tr>
+                    
+                        <tr>
+                            <td>dd74cf3d-03d2-4fd7-9fea-ec7734e2fa7c</td>
+                            <td>13</td>
+                            <td><p>Click the breadcrumb link to go back to the 'What Is MS?' page.</p></td>
+                            <td></td>
+                            <td><p>The 'What Is MS?' page is displayed.</p></td>
+                            <td>UNEXECUTED</td>
+                            <td></td>
+                            <td></td>
+                        </tr>
+                    
+                        <tr>
+                            <td>147d9f9d-a3fe-4936-9250-922226836592</td>
+                            <td>14</td>
+                            <td><p>Click the 'Related Conditions' link</p></td>
+                            <td></td>
+                            <td><p>The 'Related Conditions' page is displayed.</p></td>
+                            <td>UNEXECUTED</td>
+                            <td></td>
+                            <td></td>
+                        </tr>
+                    
+                        <tr>
+                            <td>a1aed963-727e-44da-ac84-651ccaad93f7</td>
+                            <td>15</td>
+                            <td><p>Click the breadcrumb link to go back to the 'What Is MS?' page.</p></td>
+                            <td></td>
+                            <td><p>The 'What Is MS?' page is displayed.</p></td>
+                            <td>UNEXECUTED</td>
+                            <td></td>
+                            <td></td>
+                        </tr>
+                    
+                        <tr>
+                            <td>ec5cb46f-c5a7-48e2-af0d-e4f275b75f5c</td>
+                            <td>16</td>
+                            <td><p>Click the breadcrumb link to go back to the main page.</p></td>
+                            <td></td>
+                            <td><p>The main page is displayed.</p></td>
+                            <td>UNEXECUTED</td>
+                            <td></td>
+                            <td></td>
+                        </tr>
+                    
+                
+            
+                
+                    <tr>
+                        <td rowspan="5">e54060b8-6086-457c-b826-a0ce87b271b8</td>
+                        <td rowspan="5">Helen Brennan Solo Project</td>
+                        <td rowspan="5"></td>
+                        <td rowspan="5">Q4H-120</td>
+                        <td rowspan="5">Incorrect username</td>
+                        <td rowspan="5">QLH4 Helen</td>
+                        <td rowspan="5"></td>
+                        <td rowspan="5">Unscheduled</td>
+                        <td rowspan="5">Medium</td>
+                        <td rowspan="5">Helen Brennan</td>
+                        <td rowspan="5">Tue Sep 03 14:26:42 PDT 2019</td>
+                        <td rowspan="5">PASS</td>
+                        <td rowspan="5"></td>
+                        <td rowspan="5">Tue Sep 03 14:25:16 PDT 2019</td>
+                        <td rowspan="5">Helen Brennan</td>
+                        <td rowspan="5"></td>
+                        <td rowspan="5"></td>
+                        <td rowspan="5"></td>
+                        <td rowspan="5"></td>
+                        
+                            <td>a90668e4-cf7c-426a-b9b6-59fe5aed4250</td>
+                            <td>1</td>
+                            <td><p>Access the website.</p></td>
+                            <td><p>https://www.nationalmssociety.org</p></td>
+                            <td><p>The main page is displayed.</p></td>
+                            <td>UNEXECUTED</td>
+                            <td></td>
+                            <td></td>
+                        
+                    </tr>
+                    
+                        <tr>
+                            <td>8fbdd57a-fa18-4a57-a2e0-612a698a07e8</td>
+                            <td>2</td>
+                            <td><p>Click the 'Sign In' link in the top header.</p></td>
+                            <td></td>
+                            <td><p>The 'Sign In' page is displayed.</p></td>
+                            <td>UNEXECUTED</td>
+                            <td></td>
+                            <td></td>
+                        </tr>
+                    
+                        <tr>
+                            <td>ffc41a4a-1e2a-4923-af59-479a289ef93f</td>
+                            <td>3</td>
+                            <td><p>In the 'Returning? Sign In' box, enter incorrect username</p></td>
+                            <td><p>username: HB_79</p></td>
+                            <td></td>
+                            <td>UNEXECUTED</td>
+                            <td></td>
+                            <td></td>
+                        </tr>
+                    
+                        <tr>
+                            <td>efd66133-5d94-4996-837e-86473bb54b09</td>
+                            <td>4</td>
+                            <td><p>Enter correct password</p></td>
+                            <td><p>password: some_pa55word</p></td>
+                            <td></td>
+                            <td>UNEXECUTED</td>
+                            <td></td>
+                            <td></td>
+                        </tr>
+                    
+                        <tr>
+                            <td>2f1bf573-d8d4-491a-8247-16d8fee507f1</td>
+                            <td>5</td>
+                            <td><p>Click the 'Sign In' button</p></td>
+                            <td></td>
+                            <td><p>An error should display stating "Incorrect user name or password."</p></td>
+                            <td>UNEXECUTED</td>
+                            <td></td>
+                            <td></td>
+                        </tr>
+                    
+                
+            
+                
+                    <tr>
+                        <td rowspan="18">ec2aa0bd-cf3c-4748-bf5e-463d9eaad2f1</td>
+                        <td rowspan="18">Helen Brennan Solo Project</td>
+                        <td rowspan="18"></td>
+                        <td rowspan="18">Q4H-107</td>
+                        <td rowspan="18">Internal links - guest users - Get Involved</td>
+                        <td rowspan="18">QLH4 Helen</td>
+                        <td rowspan="18"></td>
+                        <td rowspan="18">Unscheduled</td>
+                        <td rowspan="18">Medium</td>
+                        <td rowspan="18">Helen Brennan</td>
+                        <td rowspan="18">Tue Sep 03 14:26:47 PDT 2019</td>
+                        <td rowspan="18">PASS</td>
+                        <td rowspan="18"></td>
+                        <td rowspan="18">Tue Sep 03 14:24:53 PDT 2019</td>
+                        <td rowspan="18">Helen Brennan</td>
+                        <td rowspan="18"></td>
+                        <td rowspan="18"></td>
+                        <td rowspan="18"></td>
+                        <td rowspan="18"></td>
+                        
+                            <td>1dba0024-24c5-4e4f-8660-60c4bde77437</td>
+                            <td>1</td>
+                            <td><p>Access the website</p></td>
+                            <td><p>https://www.nationalmssociety.org</p></td>
+                            <td><p>The website displays.</p></td>
+                            <td>UNEXECUTED</td>
+                            <td></td>
+                            <td></td>
+                        
+                    </tr>
+                    
+                        <tr>
+                            <td>deb262c9-49d8-44e0-87dc-885b1b0e3525</td>
+                            <td>2</td>
+                            <td><p>Ensure that the link at the top says 'Sign In' and not 'Hello, Helen'</p></td>
+                            <td></td>
+                            <td></td>
+                            <td>UNEXECUTED</td>
+                            <td></td>
+                            <td></td>
+                        </tr>
+                    
+                        <tr>
+                            <td>a37cc71f-4c8f-4afe-8b6c-8173051994e9</td>
+                            <td>3</td>
+                            <td><p>Click the 'Get Involved' link in the menu bar.</p></td>
+                            <td></td>
+                            <td><p>The 'Get Involved' page is displayed.</p></td>
+                            <td>UNEXECUTED</td>
+                            <td></td>
+                            <td></td>
+                        </tr>
+                    
+                        <tr>
+                            <td>2b97c8d6-2839-4725-a38d-62cdac99e694</td>
+                            <td>4</td>
+                            <td><p>Click the 'Find An Event Participant' button in the box labeled Support an Event Participant</p></td>
+                            <td></td>
+                            <td><p>The 'Find a Participant or Team' page is displayed.</p></td>
+                            <td>UNEXECUTED</td>
+                            <td></td>
+                            <td></td>
+                        </tr>
+                    
+                        <tr>
+                            <td>a6881d1f-3087-4ff3-93b4-e864c104e54c</td>
+                            <td>5</td>
+                            <td><p>Click the 'Get Involved' link in the menu bar.</p></td>
+                            <td></td>
+                            <td><p>The 'Get Involved' page is displayed.</p></td>
+                            <td>UNEXECUTED</td>
+                            <td></td>
+                            <td></td>
+                        </tr>
+                    
+                        <tr>
+                            <td>e1d5f8ba-4d32-45d4-8cdd-3689b0285898</td>
+                            <td>6</td>
+                            <td><p>Click the 'Take Action' button in the box labeled Advocate for Change</p></td>
+                            <td></td>
+                            <td><p>The 'Advocate for Change' page is displayed.</p></td>
+                            <td>UNEXECUTED</td>
+                            <td></td>
+                            <td></td>
+                        </tr>
+                    
+                        <tr>
+                            <td>4593574d-1efd-4906-8438-63ff04161c57</td>
+                            <td>7</td>
+                            <td><p>Click the breadcrumb link to go back to the 'Get Involved' page.</p></td>
+                            <td></td>
+                            <td><p>The 'Get Involved' page is displayed.</p></td>
+                            <td>UNEXECUTED</td>
+                            <td></td>
+                            <td></td>
+                        </tr>
+                    
+                        <tr>
+                            <td>ee53d486-dace-4d92-bed3-f753906fcf67</td>
+                            <td>8</td>
+                            <td><p>Click the 'Find Volunteer Opportunities' button in the box labeled 'Volunteer Your Time'</p></td>
+                            <td></td>
+                            <td><p>The 'Volunteer' page is displayed.</p></td>
+                            <td>UNEXECUTED</td>
+                            <td></td>
+                            <td></td>
+                        </tr>
+                    
+                        <tr>
+                            <td>576c717b-5b68-4c49-a7f0-98ccbae31d39</td>
+                            <td>9</td>
+                            <td><p>Click the breadcrumb link to go back to the 'Get Involved' page.</p></td>
+                            <td></td>
+                            <td><p>The 'Get Involved' page is displayed.</p></td>
+                            <td>UNEXECUTED</td>
+                            <td></td>
+                            <td></td>
+                        </tr>
+                    
+                        <tr>
+                            <td>c318aafe-e18c-454e-a13e-77f9f47adc81</td>
+                            <td>10</td>
+                            <td><p>Click the 'Raise Awareness' button in the box labeled 'Raise Awareness'</p></td>
+                            <td></td>
+                            <td><p>The 'Raise Awareness' page is displayed</p></td>
+                            <td>UNEXECUTED</td>
+                            <td></td>
+                            <td></td>
+                        </tr>
+                    
+                        <tr>
+                            <td>a37a50ec-4830-4fc2-9f2a-4f35ba966954</td>
+                            <td>11</td>
+                            <td><p>Click the breadcrumb link to go back to the 'Get Involved' page.</p></td>
+                            <td></td>
+                            <td><p>The 'Get Involved' page is displayed.</p></td>
+                            <td>UNEXECUTED</td>
+                            <td></td>
+                            <td></td>
+                        </tr>
+                    
+                        <tr>
+                            <td>118cab81-9f10-4879-a51c-5e0000d792f6</td>
+                            <td>12</td>
+                            <td><p>Click the 'Join Now' button in the box labeled 'Join The Community'</p></td>
+                            <td></td>
+                            <td><p>A new tab is opened to msconnection.org</p></td>
+                            <td>UNEXECUTED</td>
+                            <td></td>
+                            <td></td>
+                        </tr>
+                    
+                        <tr>
+                            <td>cfc6e007-2122-44b9-8bda-aee2e3db9b5f</td>
+                            <td>13</td>
+                            <td><p>Close the tab and go back to https://www.nationalmssociety.org website.</p></td>
+                            <td></td>
+                            <td><p>The 'Get Involved' page is still displayed.</p></td>
+                            <td>UNEXECUTED</td>
+                            <td></td>
+                            <td></td>
+                        </tr>
+                    
+                        <tr>
+                            <td>7f1295d0-105c-4670-ac33-e03359a391ea</td>
+                            <td>14</td>
+                            <td><p>Click the 'Find A Chapter' button in the box labeled 'Connect in Your Area'</p></td>
+                            <td></td>
+                            <td><p>The 'Near You' page is displayed.</p></td>
+                            <td>UNEXECUTED</td>
+                            <td></td>
+                            <td></td>
+                        </tr>
+                    
+                        <tr>
+                            <td>a05873e9-7d5c-4d54-ace0-5dca0f5f2938</td>
+                            <td>15</td>
+                            <td><p>Click the 'Get Involved' link in the menu bar.</p></td>
+                            <td></td>
+                            <td><p>The 'Get Involved' page is displayed.</p></td>
+                            <td>UNEXECUTED</td>
+                            <td></td>
+                            <td></td>
+                        </tr>
+                    
+                        <tr>
+                            <td>aef93e08-4184-4a5f-8073-d970d98034cc</td>
+                            <td>16</td>
+                            <td><p>Click the 'Donate Now' button in the box labeled 'Make a Donation'</p></td>
+                            <td></td>
+                            <td><p>The 'Donate' page is displayed.</p></td>
+                            <td>UNEXECUTED</td>
+                            <td></td>
+                            <td></td>
+                        </tr>
+                    
+                        <tr>
+                            <td>3eaf3031-f2fe-4480-84f9-f43f179cfc45</td>
+                            <td>17</td>
+                            <td><p>Click the breadcrumb link to go back to the main page.</p></td>
+                            <td></td>
+                            <td><p>The main page is displayed.</p></td>
+                            <td>UNEXECUTED</td>
+                            <td></td>
+                            <td></td>
+                        </tr>
+                    
+                        <tr>
+                            <td>3bbeae84-159a-4ee3-9490-f352238c4154</td>
+                            <td>18</td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <td>UNEXECUTED</td>
+                            <td></td>
+                            <td></td>
+                        </tr>
+                    
+                
+            
+                
+                    <tr>
+                        <td rowspan="21">f7fe6217-d811-488c-8837-649723154b3c</td>
+                        <td rowspan="21">Helen Brennan Solo Project</td>
+                        <td rowspan="21"></td>
+                        <td rowspan="21">Q4H-109</td>
+                        <td rowspan="21">Internal links - registered users - Symptoms &amp; Diagnosis</td>
+                        <td rowspan="21">QLH4 Helen</td>
+                        <td rowspan="21"></td>
+                        <td rowspan="21">Unscheduled</td>
+                        <td rowspan="21">Medium</td>
+                        <td rowspan="21">Helen Brennan</td>
+                        <td rowspan="21">Tue Sep 03 14:26:48 PDT 2019</td>
+                        <td rowspan="21">PASS</td>
+                        <td rowspan="21"></td>
+                        <td rowspan="21">Tue Sep 03 14:24:55 PDT 2019</td>
+                        <td rowspan="21">Helen Brennan</td>
+                        <td rowspan="21"></td>
+                        <td rowspan="21"></td>
+                        <td rowspan="21"></td>
+                        <td rowspan="21"></td>
+                        
+                            <td>21c6642c-a510-4bd0-82e4-21de0e70a4d3</td>
+                            <td>1</td>
+                            <td><p>Access the website</p></td>
+                            <td><p>https://www.nationalmssociety.org</p></td>
+                            <td><p>The website displays.</p></td>
+                            <td>UNEXECUTED</td>
+                            <td></td>
+                            <td></td>
+                        
+                    </tr>
+                    
+                        <tr>
+                            <td>ebd17b7d-e574-4aee-b53b-e9a8f3d08b95</td>
+                            <td>2</td>
+                            <td><p>Ensure that the link at the top says 'Hello, Helen' and not 'Sign In'.</p></td>
+                            <td></td>
+                            <td></td>
+                            <td>UNEXECUTED</td>
+                            <td></td>
+                            <td></td>
+                        </tr>
+                    
+                        <tr>
+                            <td>7d3a0ef2-b42f-40f3-827b-0c7f15e9b11c</td>
+                            <td>3</td>
+                            <td><p>Click the 'Symptoms & Diagnosis' link in the menu bar.</p></td>
+                            <td></td>
+                            <td><p>The 'Symptoms & Diagnosis' page is displayed.</p></td>
+                            <td>UNEXECUTED</td>
+                            <td></td>
+                            <td></td>
+                        </tr>
+                    
+                        <tr>
+                            <td>7bc222a2-c391-4480-9d3c-97f415d146a7</td>
+                            <td>4</td>
+                            <td><p>Click the 'MS Symptoms' link</p></td>
+                            <td></td>
+                            <td><p>The 'MS Symptoms' page is displayed.</p></td>
+                            <td>UNEXECUTED</td>
+                            <td></td>
+                            <td></td>
+                        </tr>
+                    
+                        <tr>
+                            <td>637969ef-ecee-4243-80ee-855ceb02605e</td>
+                            <td>5</td>
+                            <td><p>Click the breadcrumb link to go back to the 'The 'Symptoms & Diagnosis' page.</p></td>
+                            <td></td>
+                            <td><p>The 'Symptoms & Diagnosis' page is displayed.</p></td>
+                            <td>UNEXECUTED</td>
+                            <td></td>
+                            <td></td>
+                        </tr>
+                    
+                        <tr>
+                            <td>67cc958f-a3ca-4673-a44a-c44e17d65530</td>
+                            <td>6</td>
+                            <td><p>Click the 'Diagnosing MS' link.</p></td>
+                            <td></td>
+                            <td><p>The 'Diagnosing MS' page is displayed.</p></td>
+                            <td>UNEXECUTED</td>
+                            <td></td>
+                            <td></td>
+                        </tr>
+                    
+                        <tr>
+                            <td>cb4e9821-8090-4fa0-924a-d5929534087d</td>
+                            <td>7</td>
+                            <td><p>Click the breadcrumb link to go back to the 'Symptoms & Diagnosis' page.</p></td>
+                            <td></td>
+                            <td><p>The 'Symptoms & Diagnosis' page is displayed.</p></td>
+                            <td>UNEXECUTED</td>
+                            <td></td>
+                            <td></td>
+                        </tr>
+                    
+                        <tr>
+                            <td>bf5ec080-ad06-47a3-ba92-29c4b36017b0</td>
+                            <td>8</td>
+                            <td><p>Click the 'Magnetic Resonance Imaging (MRI)' link</p></td>
+                            <td></td>
+                            <td><p>The 'Magnetic Resonance Imaging (MRI)' page is displayed</p></td>
+                            <td>UNEXECUTED</td>
+                            <td></td>
+                            <td></td>
+                        </tr>
+                    
+                        <tr>
+                            <td>5b0664a7-20ee-4b37-8e73-7954da4d7cd2</td>
+                            <td>9</td>
+                            <td><p>Click the breadcrumb link to go back to the 'What Is MS?' page.</p></td>
+                            <td></td>
+                            <td><p>The 'Symptoms & Diagnosis' page is displayed.</p></td>
+                            <td>UNEXECUTED</td>
+                            <td></td>
+                            <td></td>
+                        </tr>
+                    
+                        <tr>
+                            <td>50c3720e-e383-4e58-8ba9-7e65c4cee753</td>
+                            <td>10</td>
+                            <td><p>Click the 'Cerebrospinal Fluid (CSF)' link</p></td>
+                            <td></td>
+                            <td><p>The 'Multiple Sclerosis FAQs' page is displayed</p></td>
+                            <td>UNEXECUTED</td>
+                            <td></td>
+                            <td></td>
+                        </tr>
+                    
+                        <tr>
+                            <td>2fe188e3-1108-4bf1-8ae4-ff5735b51861</td>
+                            <td>11</td>
+                            <td><p>Click the breadcrumb link to go back to the 'The 'Symptoms & Diagnosis' page.</p></td>
+                            <td></td>
+                            <td><p>The 'What Is MS?' page is displayed.</p></td>
+                            <td>UNEXECUTED</td>
+                            <td></td>
+                            <td></td>
+                        </tr>
+                    
+                        <tr>
+                            <td>8da56080-c485-4d6d-9723-9751d1606dab</td>
+                            <td>12</td>
+                            <td><p>Click the 'Possible MS' link</p></td>
+                            <td></td>
+                            <td><p>The 'Possible MS' page is displayed.</p></td>
+                            <td>UNEXECUTED</td>
+                            <td></td>
+                            <td></td>
+                        </tr>
+                    
+                        <tr>
+                            <td>56886e75-2be2-4a5c-8efe-d64a9bd31155</td>
+                            <td>13</td>
+                            <td><p>Click the breadcrumb link to go back to the 'The 'Symptoms & Diagnosis' page.</p></td>
+                            <td></td>
+                            <td><p>The 'Symptoms & Diagnosis' page is displayed.</p></td>
+                            <td>UNEXECUTED</td>
+                            <td></td>
+                            <td></td>
+                        </tr>
+                    
+                        <tr>
+                            <td>751527aa-c7f0-406c-a40d-fe85c728784b</td>
+                            <td>14</td>
+                            <td><p>Click the 'Clinically Isolated Syndrome (CIS)' link</p></td>
+                            <td></td>
+                            <td><p>The 'Clinically Isolated Syndrome (CIS)' page is displayed.</p></td>
+                            <td>UNEXECUTED</td>
+                            <td></td>
+                            <td></td>
+                        </tr>
+                    
+                        <tr>
+                            <td>20f4794e-339a-4df7-b31b-3c4ca2301eaa</td>
+                            <td>15</td>
+                            <td><p>Click the breadcrumb link to go back to the 'The 'Symptoms & Diagnosis' page.</p></td>
+                            <td></td>
+                            <td><p>The 'Symptoms & Diagnosis' page is displayed.</p></td>
+                            <td>UNEXECUTED</td>
+                            <td></td>
+                            <td></td>
+                        </tr>
+                    
+                        <tr>
+                            <td>4a6eaafe-f5fa-415d-a88c-74693e342cd8</td>
+                            <td>16</td>
+                            <td><p>Click the 'Newly Diagnosed' link.</p></td>
+                            <td></td>
+                            <td><p>The 'Newly Diagnosed' page is displayed.</p></td>
+                            <td>UNEXECUTED</td>
+                            <td></td>
+                            <td></td>
+                        </tr>
+                    
+                        <tr>
+                            <td>6bba32d3-8dd5-41b1-b3e3-477798e4281e</td>
+                            <td>17</td>
+                            <td><p>Click the breadcrumb link to go back to the 'The 'Symptoms & Diagnosis' page.</p></td>
+                            <td></td>
+                            <td><p>The 'Symptoms & Diagnosis' page is displayed.</p></td>
+                            <td>UNEXECUTED</td>
+                            <td></td>
+                            <td></td>
+                        </tr>
+                    
+                        <tr>
+                            <td>fb9bbf5e-29ba-4690-a770-e3c8b695404f</td>
+                            <td>18</td>
+                            <td><p>Click the 'Other Conditions to Rule Out' link.</p></td>
+                            <td></td>
+                            <td><p>The 'Other Conditions to Rule Out' page is displayed.</p></td>
+                            <td>UNEXECUTED</td>
+                            <td></td>
+                            <td></td>
+                        </tr>
+                    
+                        <tr>
+                            <td>c08ef12a-d200-49f7-b7de-74ab0294dd39</td>
+                            <td>19</td>
+                            <td><p>Click the breadcrumb link to go back to the 'The 'Symptoms & Diagnosis' page.</p></td>
+                            <td></td>
+                            <td><p>The 'Symptoms & Diagnosis' page is displayed.</p></td>
+                            <td>UNEXECUTED</td>
+                            <td></td>
+                            <td></td>
+                        </tr>
+                    
+                        <tr>
+                            <td>8035990a-c79c-42e4-8eec-4ff8a325261a</td>
+                            <td>20</td>
+                            <td><p>Click the 'For Clinicians' link.</p></td>
+                            <td></td>
+                            <td><p>The 'For Clinicians' page is displayed.</p></td>
+                            <td>UNEXECUTED</td>
+                            <td></td>
+                            <td></td>
+                        </tr>
+                    
+                        <tr>
+                            <td>0c31f1f5-fb40-4a8d-a111-948579a30d2c</td>
+                            <td>21</td>
+                            <td><p>Click the breadcrumb link to go back to the main page.</p></td>
+                            <td></td>
+                            <td><p>The main page is displayed.</p></td>
+                            <td>UNEXECUTED</td>
+                            <td></td>
+                            <td></td>
+                        </tr>
+                    
+                
+            
+                
+                    <tr>
+                        <td rowspan="16">fb30d2ed-9b69-4e79-8a6d-ad5dd0746d92</td>
+                        <td rowspan="16">Helen Brennan Solo Project</td>
+                        <td rowspan="16"></td>
+                        <td rowspan="16">Q4H-105</td>
+                        <td rowspan="16">Internal links - guest users - Living Well with MS</td>
+                        <td rowspan="16">QLH4 Helen</td>
+                        <td rowspan="16"></td>
+                        <td rowspan="16">Unscheduled</td>
+                        <td rowspan="16">Medium</td>
+                        <td rowspan="16">Helen Brennan</td>
+                        <td rowspan="16">Tue Sep 03 14:26:50 PDT 2019</td>
+                        <td rowspan="16">PASS</td>
+                        <td rowspan="16"></td>
+                        <td rowspan="16">Tue Sep 03 14:24:52 PDT 2019</td>
+                        <td rowspan="16">Helen Brennan</td>
+                        <td rowspan="16"></td>
+                        <td rowspan="16"></td>
+                        <td rowspan="16"></td>
+                        <td rowspan="16"></td>
+                        
+                            <td>019176c1-c0f9-4330-9d74-943f22971620</td>
+                            <td>1</td>
+                            <td><p>Access the website</p></td>
+                            <td><p>https://www.nationalmssociety.org</p></td>
+                            <td><p>The website displays.</p></td>
+                            <td>UNEXECUTED</td>
+                            <td></td>
+                            <td></td>
+                        
+                    </tr>
+                    
+                        <tr>
+                            <td>d39721e4-8c72-44ca-8091-d41129a2ee87</td>
+                            <td>2</td>
+                            <td><p>Ensure that the link at the top says 'Sign In' and not 'Hello, Helen'</p></td>
+                            <td></td>
+                            <td></td>
+                            <td>UNEXECUTED</td>
+                            <td></td>
+                            <td></td>
+                        </tr>
+                    
+                        <tr>
+                            <td>0bbdb306-ceb1-448d-8638-255c6dbbb633</td>
+                            <td>3</td>
+                            <td><p>Click the 'Living Well' link in the menu bar.</p></td>
+                            <td></td>
+                            <td><p>The 'Living Well' page is displayed.</p></td>
+                            <td>UNEXECUTED</td>
+                            <td></td>
+                            <td></td>
+                        </tr>
+                    
+                        <tr>
+                            <td>c45d8a15-d1cf-47e8-b10e-6db2eabbcd93</td>
+                            <td>4</td>
+                            <td><p>Click the 'Diet, Exercise & Healthy Behaviors' link</p></td>
+                            <td></td>
+                            <td><p>The 'Diet, Exercise & Healthy Behaviors' page is displayed.</p></td>
+                            <td>UNEXECUTED</td>
+                            <td></td>
+                            <td></td>
+                        </tr>
+                    
+                        <tr>
+                            <td>7a28fa60-5b38-4a6d-abc5-1bd2935ede64</td>
+                            <td>5</td>
+                            <td><p>Click the breadcrumb link to go back to the 'Living Well' page.</p></td>
+                            <td></td>
+                            <td><p>The 'Living Well' page is displayed.</p></td>
+                            <td>UNEXECUTED</td>
+                            <td></td>
+                            <td></td>
+                        </tr>
+                    
+                        <tr>
+                            <td>a104a1b6-ae34-4cec-af83-38bcc672d55a</td>
+                            <td>6</td>
+                            <td><p>Click the 'Emotional Well-Being' link.</p></td>
+                            <td></td>
+                            <td><p>The 'Emotional Well-Being' page is displayed.</p></td>
+                            <td>UNEXECUTED</td>
+                            <td></td>
+                            <td></td>
+                        </tr>
+                    
+                        <tr>
+                            <td>3ff72425-1fa1-4274-862f-8bf39494c9b2</td>
+                            <td>7</td>
+                            <td><p>Click the breadcrumb link to go back to the 'Living Well' page.</p></td>
+                            <td></td>
+                            <td><p>The 'Living Well' page is displayed.</p></td>
+                            <td>UNEXECUTED</td>
+                            <td></td>
+                            <td></td>
+                        </tr>
+                    
+                        <tr>
+                            <td>cee39ae3-abf7-4b52-ab53-b8393163b799</td>
+                            <td>8</td>
+                            <td><p>Click the 'Spiritual Well-Being' link</p></td>
+                            <td></td>
+                            <td><p>The 'Spiritual Well-Being' page is displayed</p></td>
+                            <td>UNEXECUTED</td>
+                            <td></td>
+                            <td></td>
+                        </tr>
+                    
+                        <tr>
+                            <td>ef7e7fe8-a501-4512-9df4-af7ea52ddf67</td>
+                            <td>9</td>
+                            <td><p>Click the breadcrumb link to go back to the 'Living Well' page.</p></td>
+                            <td></td>
+                            <td><p>The 'Living Well' page is displayed.</p></td>
+                            <td>UNEXECUTED</td>
+                            <td></td>
+                            <td></td>
+                        </tr>
+                    
+                        <tr>
+                            <td>9987e76c-4fed-4349-bb21-35288dfea6df</td>
+                            <td>10</td>
+                            <td><p>Click the 'Cognitive Health' link</p></td>
+                            <td></td>
+                            <td><p>The 'Managing Relapses' page is displayed</p></td>
+                            <td>UNEXECUTED</td>
+                            <td></td>
+                            <td></td>
+                        </tr>
+                    
+                        <tr>
+                            <td>6bc1d550-3751-430f-8186-61706e1e8267</td>
+                            <td>11</td>
+                            <td><p>Click the breadcrumb link to go back to the 'Living Well' page.</p></td>
+                            <td></td>
+                            <td><p>The 'Living Well' page is displayed.</p></td>
+                            <td>UNEXECUTED</td>
+                            <td></td>
+                            <td></td>
+                        </tr>
+                    
+                        <tr>
+                            <td>6e8bb7dd-8e2f-41a9-9ff9-081aae85fe6d</td>
+                            <td>12</td>
+                            <td><p>Click the 'Work, Home & Leisure' link</p></td>
+                            <td></td>
+                            <td><p>The 'Work, Home & Leisure' page is displayed.</p></td>
+                            <td>UNEXECUTED</td>
+                            <td></td>
+                            <td></td>
+                        </tr>
+                    
+                        <tr>
+                            <td>df955ab9-979e-48ac-a7e2-64b21da335b1</td>
+                            <td>13</td>
+                            <td><p>Click the breadcrumb link to go back to the 'Living Well' page.</p></td>
+                            <td></td>
+                            <td><p>The 'Living Well' page is displayed.</p></td>
+                            <td>UNEXECUTED</td>
+                            <td></td>
+                            <td></td>
+                        </tr>
+                    
+                        <tr>
+                            <td>b5fac7a2-838f-48dc-8491-3c27a86b82cb</td>
+                            <td>14</td>
+                            <td><p>Click the 'Relationships' link</p></td>
+                            <td></td>
+                            <td><p>The 'Relationships' page is displayed.</p></td>
+                            <td>UNEXECUTED</td>
+                            <td></td>
+                            <td></td>
+                        </tr>
+                    
+                        <tr>
+                            <td>1ce18bb7-9f14-48eb-bc63-6e6830300a96</td>
+                            <td>15</td>
+                            <td><p>Click the breadcrumb link to go back to the 'Living Well' page.</p></td>
+                            <td></td>
+                            <td><p>The 'Living Well' page is displayed.</p></td>
+                            <td>UNEXECUTED</td>
+                            <td></td>
+                            <td></td>
+                        </tr>
+                    
+                        <tr>
+                            <td>9f8fbfc4-e0e9-404e-8360-40534ce60a0b</td>
+                            <td>16</td>
+                            <td><p>Click the breadcrumb link to go back to the main page.</p></td>
+                            <td></td>
+                            <td><p>The main page is displayed.</p></td>
+                            <td>UNEXECUTED</td>
+                            <td></td>
+                            <td></td>
+                        </tr>
+                    
+                
+            
+            </tbody>
+        </table>
+    </body>
+</html>

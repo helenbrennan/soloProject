@@ -1,10 +1,5 @@
 var donateObjects = {}
-var clickByText = (browser, text) => {
-    donateObjects
-        .useXpath()
-        .click(`//*[text()="${text}"]`)
-        .useCss()
-}
+
 var donation = (donateObjects, firstName, lastName, billingStreetOne, billingCity, billingState, billingZip, donorEmail, connectionToMs, creditCardNumber, cvvNumber) => {
     donateObjects
         .click('@donateButton')
