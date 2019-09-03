@@ -1,14 +1,6 @@
-var externalLinks = function (browser, smLink) {
-    this
-        .click(smLink)
-        .verify.urlContains(smLink.link)
-        this
-        .closeWindow();
-}
-
 module.exports = {
     url: ('https://www.nationalmssociety.org'),
-    commands: [externalLinks],
+
     elements: {
         signIn: {
             selector: ('//*[@id="quick-links"]/div[1]/div/a/span[2]'),
@@ -28,9 +20,25 @@ module.exports = {
             selector: ('//*[@id="p_lt_zoneMastheadNavColumn1_SelectedChapterCalloutControl_userControlElem_lnkChapters"]'),
             locateStrategy: 'xpath'
         },
-        donateButton: {
-            selector: ('//div[@class="masthead-nav-group masthead-nav-donate"]'),
+        inYourAreaSearch: {
+            selector: ('//*[@id="p_lt_zoneContent_pageplaceholder_p_lt_ctl00_ChapterLocator_txtZipCode"]'),
             locateStrategy: 'xpath'
+        },
+        inYourAreaResults: {
+            selector: ('//*[@class="tile-title f-font-size-large f-heading"]'),
+            locateStrategy: 'xpath'
+        },
+        tryAnotherSearch: {
+            selector: ('//*[@id="p_lt_zoneContent_pageplaceholder_p_lt_ctl02_ChapterLocator1_txtZipCode"]'),
+            locateStrategy: 'xpath'
+        },
+        tryAnotherSearchButton: {
+            selector: ('//*[@id="p_lt_zoneContent_pageplaceholder_p_lt_ctl02_ChapterLocator1_btnSearchByZip"]'),
+            locateStrategy: 'xpath'
+        },
+        inYourAreaSearchButton: {
+            selector: ('//*[@id="p_lt_zoneContent_pageplaceholder_p_lt_ctl00_ChapterLocator_btnSearchByZip"]'),
+            locateStrategy: 'xpath'        
         },
         searchBar: ('.search-controls'),
         // searchBar: {
